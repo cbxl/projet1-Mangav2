@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="custom.css">
     <title>Fan de Manga</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     
 </head>
 <body>
@@ -77,204 +79,341 @@
       </nav>
     
     <main>
-      <img class = "manga-head-img"
+      <img class = "mangaHeadImage"
       src = https://i.servimg.com/u/f42/17/42/10/51/baniar10.jpg
       alt = "Illustrations de nombreux personnages rassemblés">
-      <h1>Retrouvez les meilleurs mangas de l'année 2020 !</h1>
+      <h1>Découvrez ou redécouvrez vos meilleurs mangas !</h1>
 
-      <div class = "classement">
+      <div class = "classement row">
         
-      <div class="card">
-        <h5>N°1 : One Piece</h5>
-        <img 
-          src=https://media.senscritique.com/media/000015702798/source_big/One_Piece.jpg
-          class="card-img-top"
-          alt="Illustration du manga One Piece">
-        <div class="card-body">
-          <li>
-            <ul>Auteur(s) : Eiichiro Oda</ul>
-            <ul>Dessinateur(s) : Eiichiro Oda</ul>
-            <ul>Titre original : Wan Pīsu</ul>
-            <ul>Langue d'origine : Japonais</ul>
-            <ul>Date de sortie dans le pays d'origine : 22 juillet 1997</ul>
-            <ul>Date de sortie en France : 20 septembre 2000</ul>
-          </li>
-          <p class="card-text">Nous sommes à l'ère des pirates. Luffy, un garçon espiègle, rêve de devenir le roi des pirates en trouvant le “One Piece”, un fabuleux trésor. Seulement, Luffy a avalé un fruit du démon qui l'a transformé en homme élastique. Depuis, il est capable de contorsionner son corps dans tous les sens, mais il a perdu la faculté de nager. Avec l'aide de ses précieux amis, il va devoir affronter de redoutables pirates dans des aventures toujours plus rocambolesques.</p>
+      <div class="card mb-3 mangaCard shadow col-md-6">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <span class="badge badge-pill badge-warning mangaBadge">N°1</span>
+            <img 
+              src=https://media.senscritique.com/media/000015702798/source_big/One_Piece.jpg
+              class="card-img-top shadow mangaCardImage"
+              alt="Illustration du manga One Piece">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h5 class="card-title">N°1 : One Piece</h5>
+              <div class="mangaCardList">
+                <ul class="mangaCardListDetails list-group list-group-flush">
+                  <li class="list-group-item">Auteur(s) : Eiichiro Oda</li>
+                  <li class="list-group-item">Dessinateur(s) : Eiichiro Oda</li>
+                  <li class="list-group-item">Titre original : Wan Pīsu</li>
+                  <li class="list-group-item">Langue d'origine : Japonais</li>
+                  <li class="list-group-item">Date de sortie dans le pays d'origine : 22 juillet 1997</li>
+                  <li class="list-group-item">Date de sortie en France : 20 septembre 2000</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="card-text text-justify cardMangaText">Nous sommes à l'ère des pirates. Luffy, un garçon espiègle, rêve de devenir le roi des pirates en trouvant le “One Piece”, un fabuleux trésor. Seulement, Luffy a avalé un fruit du démon qui l'a transformé en homme élastique. Depuis, il est capable de contorsionner son corps dans tous les sens, mais il a perdu la faculté de nager. Avec l'aide de ses précieux amis, il va devoir affronter de redoutables pirates dans des aventures toujours plus rocambolesques.</p>
+          </div>
+          <!-- Button trigger modal -->
+          
+          <button type="button" class="btn btn-primary mangaDetailButton" data-toggle="modal" data-target="#exampleModalLong">Détails</button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">En savoir plus sur l'histoire de One Piece</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                 <p class = "mangaDetailText text-justify">One Piece (ワンピース, Wan Pīsu?) est une série de mangas shōnen créée par Eiichirō Oda. Elle est prépubliée depuis le 22 juillet 1997 dans le magazine hebdomadaire Weekly Shōnen Jump, puis regroupée en volumes reliés aux éditions Shūeisha depuis le 24 décembre 1997. En avril 2020, 97 tomes et plus de 980 chapitres sont commercialisés au Japon. La version française est publiée directement en volume reliés depuis le 1er septembre 2000 par Glénat. 95 volumes sont commercialisés en juillet 2020 en France. Depuis le 3 juillet 2013, une réédition a été éditée pour cause de problèmes de droit avec l'ancien traducteur.
+                  L'histoire suit les aventures de Monkey D. Luffy, un garçon dont le corps a acquis les propriétés du caoutchouc après avoir mangé par inadvertance un fruit du démon. Avec son équipage de pirates, appelé l'équipage de Chapeau de paille, Luffy explore Grand Line à la recherche du trésor ultime connu sous le nom de « One Piece » afin de devenir le prochain roi des pirates.
+                  Les droits de la série sont acquis par la société Toei Animation qui adapte le manga en anime, cette version est diffusée au Japon chaque dimanche depuis 1999. La série compte plus de 930 épisodes en 2020. Dans les pays francophones, les droits de l'anime sont possédés par Kana Home Video. Il est disponible sur les plates-formes de streaming Anime Digital Network et Crunchyroll. Il est aussi diffusé sur les chaînes J-One, Game One et MCM. La licence compte 14 films, 11 épisodes spéciaux et 1 OAV, ainsi que 4 romans, 1 livre de recettes, plus de 50 jeux vidéo, plus de 5000 figurines1, un restaurant, un parc d’attraction, et une série live prévue pour 20202.
+                  One Piece est le manga le plus vendu au monde (dépassant Dragon Ball de Akira Toriyama3), avec plus de 470 millions d'exemplaires en circulation en mars 20204 ; c'est également la série la plus vendue au monde dessinée par un seul auteur5, ainsi que la deuxième série la plus vendue derrière Superman (600 millions d'exemplaires). Au Japon, le tirage total des tomes de One Piece s'élève à 380 millions d'exemplaires, chaque tome se classant à la première place dès sa sortie. Le record est détenu par le tome 67 qui s'est vendu à plus de 4,05 millions d'exemplaires. Dans le reste du monde, le tirage s'élève à 75 millions d'exemplaires (dans 42 pays)6. En France, la série est devenue leader en 2011 et s'est vendue à 6,5 millions d'exemplaires depuis sa sortie. </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="card" style="width: 18rem;">
-        <h5>N°2 : Dragon Ball</h5>
-        <img
-          src = https://media.senscritique.com/media/000019266699/source_big/Dragon_Ball.png
-          class="card-img-top"
-          alt = "Illustration du manga Dragon Ball">
-        <div class="card-body">
-          <li>
-            <ul>Auteur(s) : Akira Toriyama</ul>
-            <ul>Dessinateur(s) : Akira Toriyama</ul>
-            <ul>Titre original : Doragon Bōru</ul>
-            <ul>Langue d'origine : Japonais</ul>
-            <ul>Date de sortie dans le pays d'origine : 20 novembre 1984</ul>
-            <ul>Date de sortie en France : 20 novembre 1984</ul>
-          </li>
-          <p class="card-text">Son Goku, un enfant étrange vivant seul dans la forêt, rencontre Bulma, et décide de la suivre à travers le monde à la recherche de 7 boules de cristal appelées Dragon Ball.</p>
+      <div class="card mb-3 mangaCard shadow col-md-6">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <span class="badge badge-pill badge-warning">N°2</span>
+            <img
+              src = https://media.senscritique.com/media/000019266699/source_big/Dragon_Ball.png
+              class="card-img-top shadow mangaCardImage"
+              alt = "Illustration du manga Dragon Ball">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h5 class="card-title">N°2 : Dragon Ball</h5>
+              <div class="mangaCardList">
+                <ul class="mangaCardListDetails">
+                  <li>Auteur(s) : Akira Toriyama</li>
+                  <li>Dessinateur(s) : Akira Toriyama</li>
+                  <li>Titre original : Doragon Bōru</li>
+                  <li>Langue d'origine : Japonais</li>
+                  <li>Date de sortie dans le pays d'origine : 20 novembre 1984</li>
+                  <li>Date de sortie en France : 20 novembre 1984</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="card-text text-justify cardMangaText">Son Goku, un enfant étrange vivant seul dans la forêt, rencontre Bulma, une jeune fille de la ville, et décide de la suivre à travers le monde à la recherche de 7 boules de cristal appelées Dragon Ball. Dispersées sur la Terre, ces Dragon Balls, une fois réunies, font apparaître Shenron, le Dragon sacré, qui exauce le souhait de la personne l'ayant invoqué. Au cours de leur parcours initiatique, ils font de nombreuses rencontres. Son Goku, qui n'était jamais sorti de sa forêt, est amené à suivre un apprentissage auprès de Maîtres et à participer à plusieurs championnats du monde d'arts martiaux.</p>
+          </div>
         </div>
       </div>
 
-      <div class="card" style="width: 18rem;">
-        <h5>N°3 : Death Note</h5>
-        <img
-          src = https://www.manga-news.com/public/images/series/death_note_01.jpg
-          class="card-img-top"
-          alt = "Illustration du manga Death Note">
-        <div class="card-body">
-          <li>
-            <ul>Auteur(s) : Tsugumi Ōba</ul>
-            <ul>Dessinateur(s) : Takeshi Obata</ul>
-            <ul>Titre original : Desu Nōto</ul>
-            <ul>Langue d'origine : Japonais</ul>
-            <ul>Date de sortie dans le pays d'origine : Décembre 2003</ul>
-            <ul>Date de sortie en France : non paru </ul>
-          </li>
-          <p class="card-text">Light Yagami ramasse un étrange carnet. Selon les instructions, la personne dont le nom est écrit dans les pages meurt dans les 40 secondes !</p>
+      <div class="card mb-3 mangaCard shadow col-md-6">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <span class="badge badge-pill badge-warning">N°3</span>
+            <img
+              src = https://www.manga-news.com/public/images/series/death_note_01.jpg
+              class="card-img-top shadow mangaCardImage"
+              alt = "Illustration du manga Death Note">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h5 class="card-title">N°3 : Death Note</h5>
+              <div class="mangaCardList">
+                <ul class="mangaCardListDetails">
+                  <li>Auteur(s) : Tsugumi Ōba</li>
+                  <li>Dessinateur(s) : Takeshi Obata</li>
+                  <li>Titre original : Desu Nōto</li>
+                  <li>Langue d'origine : Japonais</li>
+                  <li>Date de sortie dans le pays d'origine : Décembre 2003</li>
+                  <li>Date de sortie en France : non paru </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="card-text text-justify cardMangaText">Light Yagami est un lycéen surdoué qui juge le monde actuel criminel, pourri et corrompu. Sa vie change du tout au tout le jour où il ramasse, par hasard, un mystérieux cahier intitulé « Death Note ». Son mode d'emploi indique que « la personne dont le nom est écrit dans ce cahier meurt dans les 40 secondes !». D'abord sceptique, Light décide toutefois de tester le cahier et découvre que son pouvoir est bien réel. Light Yagami ramasse un étrange carnet.</p>
+          </div>
         </div>
       </div>
 
-      <div class="card" style="width: 18rem;">
-        <h5>N°4 : Fullmetal Alchemist</h5>
-        <img
-          src = https://media.senscritique.com/media/000019266535/source_big/Fullmetal_Alchemist.jpg
-          class="card-img-top"
-          alt = "Illustration du manga Fullmetal Alchemist">
-        <div class="card-body">
-          <li>
-            <ul>Auteur(s) : Hiromu Arakawa</ul>
-            <ul>Dessinateur(s) : Hiromu Arakawa</ul>
-            <ul>Titre original : Hagane no Renkinjutsushi</ul>
-            <ul>Langue d'origine : Japonais</ul>
-            <ul>Date de sortie dans le pays d'origine : 12 juillet 2001</ul>
-            <ul>Date de sortie en France : 8 septembre 2005</ul>
-          </li>
-          <p class="card-text">En voulant ressusciter leur mère, Edward et Alphonse Elric vont utiliser une technique interdite relevant du domaine de l'alchimie : la transmutation humaine. Seulement, l'expérience va mal tourner : Edward perd un bras et une jambe et Alphonse son corps, son esprit se retrouvant prisonnier d'une armure.Devenu un alchimiste d'Etat, Edward, surnommé "full metal alchimiste", se lance, avec l'aide de son frère, à la recherche de la pierre philosophale, leur seule chance de retrouver leur état initial.Ils commencent à enquêter sur un étrange homme, "le fondateur" qui passe pour un faiseur de miracles...</p>
+      <div class="card mb-3 mangaCard shadow col-md-6">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <span class="badge badge-pill badge-dark">N°4</span>
+            <img
+              src = https://media.senscritique.com/media/000019266535/source_big/Fullmetal_Alchemist.jpg
+              class="card-img-top shadow mangaCardImage"
+              alt = "Illustration du manga Fullmetal Alchemist">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h5 class="card-title">N°4 : Fullmetal Alchemist</h5>
+              <div class="mangaCardList">
+                <ul class="mangaCardListDetails">
+                  <li>Auteur(s) : Hiromu Arakawa</li>
+                  <li>Dessinateur(s) : Hiromu Arakawa</li>
+                  <li>Titre original : Hagane no Renkinjutsushi</li>
+                  <li>Langue d'origine : Japonais</li>
+                  <li>Date de sortie dans le pays d'origine : 12 juillet 2001</li>
+                  <li>Date de sortie en France : 8 septembre 2005</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div> 
+            <p class="card-text text-justify cardMangaText">En voulant ressusciter leur mère, Edward et Alphonse Elric vont utiliser une technique interdite relevant du domaine de l'alchimie : la transmutation humaine. Seulement, l'expérience va mal tourner : Edward perd un bras et une jambe et Alphonse son corps, son esprit se retrouvant prisonnier d'une armure.Devenu un alchimiste d'Etat, Edward, surnommé "full metal alchimiste", se lance, avec l'aide de son frère, à la recherche de la pierre philosophale, leur seule chance de retrouver leur état initial.Ils commencent à enquêter sur un étrange homme, "le fondateur" qui passe pour un faiseur de miracles...</p>
+          </div>
         </div>
       </div>
 
-      <div class="card" style="width: 18rem;">
-        <h5>N°5 : Berserk</h5>
-        <img
-          src = https://media.senscritique.com/media/000018276088/source_big/Berserk.jpg
-          class="card-img-top"
-          alt = "Illustration du manga Berserk">
-        <div class="card-body">
-          <li>
-            <ul>Auteur(s) : Kentaro Miura</ul>
-            <ul>Dessinateur(s) : Kentaro Miura</ul>
-            <ul>Titre original : Beruseruku</ul>
-            <ul>Langue d'origine : Japonais</ul>
-            <ul>Date de sortie dans le pays d'origine : Octobre 1989</ul>
-            <ul>Date de sortie en France : 26 novembre 1990</ul>
-          </li>
-          <p class="card-text">Dans un monde médiéval et fantastique, erre un guerrier solitaire nommé Guts, décidé à être seul maître de son destin. Autrefois contraint par un pari perdu à rejoindre les Faucons, une troupe de mercenaires dirigés par Griffith, Guts fut acteur de nombreux combats sanglants et témoin de sombres intrigues politiques. Mais il réalisa soudain que la fatalité n'existe pas et qu'il pouvait reprendre sa liberté s'il le désirait vraiment...</p>
+      <div class="card mb-3 mangaCard shadow col-md-6">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <span class="badge badge-pill badge-dark">N°5</span>
+            <img
+              src = https://media.senscritique.com/media/000018276088/source_big/Berserk.jpg
+              class="card-img-top shadow mangaCardImage"
+              alt = "Illustration du manga Berserk">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h5 class="card-title">N°5 : Berserk</h5>
+              <div class="mangaCardList">
+                <ul class="mangaCardListDetails">
+                  <li>Auteur(s) : Kentaro Miura</li>
+                  <li>Dessinateur(s) : Kentaro Miura</li>
+                  <li>Titre original : Beruseruku</li>
+                  <li>Langue d'origine : Japonais</li>
+                  <li>Date de sortie dans le pays d'origine : Octobre 1989</li>
+                  <li>Date de sortie en France : 26 novembre 1990</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div> 
+            <p class="card-text text-justify cardMangaText">Dans un monde médiéval et fantastique, erre un guerrier solitaire nommé Guts, décidé à être seul maître de son destin. Autrefois contraint par un pari perdu à rejoindre les Faucons, une troupe de mercenaires dirigés par Griffith, Guts fut acteur de nombreux combats sanglants et témoin de sombres intrigues politiques. Mais il réalisa soudain que la fatalité n'existe pas et qu'il pouvait reprendre sa liberté s'il le désirait vraiment...</p>
+          </div>
         </div>
       </div>
 
-      <div class="card" style="width: 18rem;">
-        <h5>N°6 : Naruto</h5>
-        <img
-          src = https://media.senscritique.com/media/000015536243/source_big/Naruto.jpg
-          class="card-img-top"
-          alt = "Illustration du manga Naruto">
-        <div class="card-body">
-          <li>
-            <ul>Auteur(s) : Masashi Kishimoto</ul>
-            <ul>Dessinateur(s) : Masashi Kishimoto</ul>
-            <ul>Titre original : Naruto</ul>
-            <ul>Langue d'origine : Japonais</ul>
-            <ul>Date de sortie dans le pays d'origine : Octobre 1999</ul>
-            <ul>Date de sortie en France : Octobre 1999</ul>
-          </li>
-          <p class="card-text">Solitaire et rejeté, Naruto est un garçon doté de pouvoirs extraordinaires. En quête de reconnaissance, il décide de devenir le plus grand chef ninja de son village.</p>
+      <div class="card mb-3 mangaCard shadow col-md-6">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <span class="badge badge-pill badge-dark">N°6</span>
+            <img
+              src = https://media.senscritique.com/media/000015536243/source_big/Naruto.jpg
+              class="card-img-top shadow mangaCardImage"
+              alt = "Illustration du manga Naruto">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h5 class="card-title">N°6 : Naruto</h5>
+              <div class="mangaCardList">
+                <ul class="mangaCardListDetails">
+                  <li>Auteur(s) : Masashi Kishimoto</li>
+                  <li>Dessinateur(s) : Masashi Kishimoto</li>
+                  <li>Titre original : Naruto</li>
+                  <li>Langue d'origine : Japonais</li>
+                  <li>Date de sortie dans le pays d'origine : Octobre 1999</li>
+                  <li>Date de sortie en France : Octobre 1999</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div> 
+            <p class="card-text text-justify cardMangaText">Solitaire et rejeté, Naruto est un garçon doté de pouvoirs extraordinaires. En quête de reconnaissance, il décide de devenir le plus grand chef ninja de son village. Au début craint et méprisé par ses pairs, Naruto va peu à peu monter en puissance et gagner le respect et l'affection des villageois grâce, notamment, aux combats dantesques qu'il remportera face aux ennemis les plus puissants de Konoha.</p>
+          </div>
         </div>
       </div>
 
-      <div class="card" style="width: 18rem;">
-        <h5>N°7 : Akira</h5>
-        <img
-          src = https://media.senscritique.com/media/000015332347/source_big/Akira.jpg
-          class="card-img-top"
-          alt = "Illustration du manga Akira">
-        <div class="card-body">
-          <li>
-            <ul>Auteur(s) : Katsuhiro Ôtomo</ul>
-            <ul>Dessinateur(s) : Katsuhiro Ôtomo</ul>
-            <ul>Titre original : Akira</ul>
-            <ul>Langue d'origine : Japonais</ul>
-            <ul>Date de sortie dans le pays d'origine : 6 décembre 1982</ul>
-            <ul>Date de sortie en France : 20 décembre 1982</ul>
-          </li>
-          <p class="card-text">Néo-Tokyo, an 2019. Nous sommes trente-huit ans après la Troisième Guerre mondiale. Le grand cataclysme a dévasté la planète. Depuis, le monde a entamé sa reconstruction. La capitale japonaise n'est plus qu'une espèce de gigantesque poubelle high-tech. Une nuit, une bande de jeunes motards fait une rencontre étrange : celle d'un enfant au visage de vieillard, doté de bien curieux pouvoirs. Ils ne le savent pas encore, mais le processus de réveil d'Akira vient de commencer... Sombre vision d'un futur aux allures d'apocalypse, Akira dépeint une société en perdition livrée aux enfants mutants, aux sectes religieuses et aux forces surnaturelles. Avec son sens du mouvement et de la vitesse, le dynamisme de son graphisme et son hyperréalisme, cette saga, entamée en 1982, est l'une des œuvres majeures de l'histoire des mangas. Elle est née de l'imagination de Katsuhiro Otomo, un auteur qui a largement contribué à faire reconnaître le genre hors des frontières de son pays natal. </p>
+      <div class="card mb-3 mangaCard shadow col-md-6">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <span class="badge badge-pill badge-dark">N°7</span>
+            <img
+              src = https://media.senscritique.com/media/000015332347/source_big/Akira.jpg
+              class="card-img-top shadow mangaCardImage"
+              alt = "Illustration du manga Akira">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h5 class="card-title">N°7 : Akira</h5>
+              <div class="mangaCardList">
+                <ul class="mangaCardListDetails">
+                  <li>Auteur(s) : Katsuhiro Ôtomo</li>
+                  <li>Dessinateur(s) : Katsuhiro Ôtomo</li>
+                  <li>Titre original : Akira</li>
+                  <li>Langue d'origine : Japonais</li>
+                  <li>Date de sortie dans le pays d'origine : 6 décembre 1982</li>
+                  <li>Date de sortie en France : 20 décembre 1982</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div> 
+            <p class="card-text text-justify cardMangaText">En 2019, Neo-Tokyo est une mégapole corrompue et sillonnée par des bandes de jeunes motards désœuvrés et drogués. Une nuit, l’un d'eux, Tetsuo, a un accident de moto en essayant d'éviter un étrange garçon qui se trouve sur son chemin. Blessé, Tetsuo est capturé par l’armée japonaise. Il est l’objet de nombreux tests dans le cadre d’un projet militaire ultra secret. Lorsqu'il s’évade et se retrouve en liberté, il n’est plus le même… Tetsuo teste ses nouveaux pouvoirs et veut s’imposer comme un leader parmi les junkies, ce qui ne plaît pas à tout le monde.</p>
+          </div>
         </div>
       </div>
 
-      <div class="card" style="width: 18rem;">
-        <h5>N°8 : GTO</h5>
-        <img
-          src = https://media.senscritique.com/media/000018657250/source_big/GTO.png
-          class="card-img-top"
-          alt = "Illustration du manga GTO">
-        <div class="card-body">
-          <li>
-            <ul>Auteur(s) : Tôru Fujisawa</ul>
-            <ul>Dessinateur(s) : Tôru Fujisawa</ul>
-            <ul>Titre original : Gurēto Tīchā Onizuka</ul>
-            <ul>Langue d'origine : Japonais</ul>
-            <ul>Date de sortie dans le pays d'origine : 16 mai 1997</ul>
-            <ul>Date de sortie en France : 20 février 2001</ul>
-          </li>
-          <p class="card-text">Ancien voyou, chef de gang, Eikichi Onizuka décide un jour de devenir prof. Sa vocation n’a rien de pédagogique. Ce qu’il veut, c’est pouvoir sortir avec les étudiantes du lycée où il travaille… Seulement, son sens de l’honneur et de la justice risquent finalement d’en faire un enseignant hors pair.</p>
+      <div class="card mb-3 mangaCard shadow col-md-6">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <span class="badge badge-pill badge-dark">N°8</span>
+            <img
+              src = https://media.senscritique.com/media/000018657250/source_big/GTO.png
+              class="card-img-top shadow mangaCardImage"
+              alt = "Illustration du manga GTO">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h5 class="card-title">N°8 : GTO</h5>
+              <div class="mangaCardList">
+                <ul class="mangaCardListDetails">
+                  <li>Auteur(s) : Tôru Fujisawa</li>
+                  <li>Dessinateur(s) : Tôru Fujisawa</li>
+                  <li>Titre original : Gurēto Tīchā Onizuka</li>
+                  <li>Langue d'origine : Japonais</li>
+                  <li>Date de sortie dans le pays d'origine : 16 mai 1997</li>
+                  <li>Date de sortie en France : 20 février 2001</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div> 
+            <p class="card-text text-justify cardMangaText">Ancien voyou, chef de gang, Eikichi Onizuka décide un jour de devenir prof. Sa vocation n’a rien de pédagogique. Ce qu’il veut, c’est pouvoir sortir avec les étudiantes du lycée où il travaille… Seulement, son sens de l’honneur et de la justice risquent finalement d’en faire un enseignant hors pair.</p>
+          </div>
         </div>
       </div>
 
-      <div class="card" style="width: 18rem;">
-        <h5>N°9 : Monster</h5>
-        <img
-          src = https://media.senscritique.com/media/000005870183/source_big/Monster.jpg
-          class="card-img-top"
-          alt = "Illustration du manga Monster">
-        <div class="card-body">
-          <li>
-            <ul>Auteur(s) : Naoki Urasawa</ul>
-            <ul>Dessinateur(s) : Naoki Urasawa</ul>
-            <ul>Titre original : Monsutā</ul>
-            <ul>Langue d'origine : Japonais</ul>
-            <ul>Date de sortie dans le pays d'origine : 5 décembre 1994</ul>
-            <ul>Date de sortie en France : 20 octobre 2001</ul>
-          </li>
-          <p class="card-text">1986. Kenzo Tenma est un brillant neurochirurgien pratiquant son art à l'hôpital Eisler de Düsseldorf. Tenma est comblé, il vient de sauver la vie d'un chanteur d'opéra célèbre... Promis à la belle Eva Heineman, la fille du directeur de l'hôpital, son avenir est tout tracé. Tout lui sourit... Jusqu'à la nuit où arrivent deux enfants, Anna et Johann Liebert, dont les parents ont été découverts sauvagement assassinés. En choisissant de sauver le petit garçon plutôt que le maire de la ville, le docteur perdra tout... Amour, gloire et honneur laisseront place à solitude, rupture et alcool... Surtout qu'autour des deux enfants, les morts se multiplient. Tenma n'aurait-il pas sauvé un monstre ?</p>
+      <div class="card mb-3 mangaCard shadow col-md-6">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <span class="badge badge-pill badge-dark">N°9</span>
+            <img
+              src = https://media.senscritique.com/media/000005870183/source_big/Monster.jpg
+              class="card-img-top shadow mangaCardImage"
+              alt = "Illustration du manga Monster">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h5 class="card-title">N°9 : Monster</h5>
+              <div class="mangaCardList">
+                <ul class="mangaCardListDetails">
+                  <li>Auteur(s) : Naoki Urasawa</li>
+                  <li>Dessinateur(s) : Naoki Urasawa</li>
+                  <li>Titre original : Monsutā</li>
+                  <li>Langue d'origine : Japonais</li>
+                  <li>Date de sortie dans le pays d'origine : 5 décembre 1994</li>
+                  <li>Date de sortie en France : 20 octobre 2001</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div> 
+            <p class="card-text text-justify cardMangaText">En 1986, Kenzo Tenma est un brillant neurochirurgien pratiquant son art à l'hôpital Eisler de Düsseldorf. Tenma est comblé, promis à la belle Eva Heineman, la fille du directeur de l'hôpital. Son avenir est tout tracé. Tout lui sourit... Jusqu'à la nuit où arrivent deux enfants, Anna et Johann Liebert, dont les parents ont été découverts sauvagement assassinés. En choisissant de sauver le petit garçon plutôt que le maire de la ville, le docteur perdra tout... Amour, gloire et honneur laisseront place à solitude, rupture et alcool... Surtout qu'autour des deux enfants, les morts se multiplient. Tenma n'aurait-il pas sauvé un monstre ?</p>
+          </div>
         </div>
       </div>
 
-      <div class="card" style="width: 18rem;">
-        <h5>N°10 : Hunter X Hunter</h5>
-        <img
-          src = https://media.senscritique.com/media/000015537294/source_big/Hunter_X_Hunter.jpg
-          class="card-img-top"
-          alt = "Illustration du manga Hunter X Hunter">
-        <div class="card-body">
-          <li>
-            <ul>Auteur(s) : Yoshihiro Togashi </ul>
-            <ul>Dessinateur(s) : Yoshihiro Togashi</ul>
-            <ul>Titre original : Hantā Hantā</ul>
-            <ul>Langue d'origine : Japonais</ul>
-            <ul>Date de sortie dans le pays d'origine : 3 mars 1998</ul>
-            <ul>Date de sortie en France : 3 mars 1998</ul>
-          </li>
-          <p class="card-text">Gon décide de quitter son village natal pour aller passer le difficile examen qui l'autorisera à devenir un hunter.</p>
+      <div class="card mb-3 mangaCard shadow col-md-6">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <span class="badge badge-pill badge-dark">N°10</span>
+            <img
+              src = https://media.senscritique.com/media/000015537294/source_big/Hunter_X_Hunter.jpg
+              class="card-img-top shadow mangaCardImage"
+              alt = "Illustration du manga Hunter X Hunter">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h5 class="card-title">N°10 : Hunter X Hunter</h5>
+              <div class="mangaCardList">
+                <ul class="mangaCardListDetails">
+                  <li>Auteur(s) : Yoshihiro Togashi </li>
+                  <li>Dessinateur(s) : Yoshihiro Togashi</li>
+                  <li>Titre original : Hantā Hantā</li>
+                  <li>Langue d'origine : Japonais</li>
+                  <li>Date de sortie dans le pays d'origine : 3 mars 1998</li>
+                  <li>Date de sortie en France : 3 mars 1998</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div> 
+            <p class="card-text text-justify cardMangaText">Gon décide de quitter son village natal pour aller passer le difficile examen qui l'autorisera à devenir un hunter. Les hunters sont des citoyens d'élite autorisés à faire quasiment tout ce qu'ils souhaitent sur simple présentation de leur carte de membre : ils peuvent ainsi acquérir gratuitement tout objet à la vente sur les fonds de l'association, et sont, de facto, habilités à exercer tous les métiers du monde. Son père, Ging Freecss, qu'il ne connaît pas directement, est considéré comme un des plus grands hunters de son temps. C'est aussi pour le retrouver que Gon veut devenir hunter.</p>
+          </div>
         </div>
       </div>
       </div>
     </main>
+  </body>
 
     <footer>
         <ul>
