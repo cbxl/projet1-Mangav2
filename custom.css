@@ -1,8 +1,30 @@
 /* menu */
-
-
+.navbar-brand-img{
+    width: 75px;
+}
+.navbar-light{
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.22);
+}
 
 /* bouton */
 
 
 /* caroussel */
+
+
+/* calendar */
+.map-location{
+    width: 8%;
+}
+
+.shadow{
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+
+.img-event{
+    background-image: url('img/card-goldorak.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+  /* fin calendar */
