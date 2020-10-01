@@ -1,12 +1,84 @@
+/* général */
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+p{
+    text-align: justify;
+}
+
 /* menu */
+.navbar-brand-img {
+    width: 80px;
+}
 
-
-
-/* bouton */
 
 
 /* caroussel */
 
+@media screen and (max-width:780px) {
+    #carouselExampleIndicators{
+        display: none;
+    }
+    .image-smartphone{
+        display: block;
+    }
+}
+
+@media screen and (min-width:780px) {
+    .image-smartphone{
+        display: none;
+    }
+}
+
+.d-block {
+    width: 70%;
+    opacity: 0.8;
+    background-color:#11222c;
+}
+.carousel-control-prev-icon {
+    width: 60px;
+    height: 60px;
+}
+.carousel-control-next-icon {
+    width: 60px;
+    height: 60px;
+}
+
+
+/* card */
+
+/* .card{
+    margin: 0.8em;      
+} */
+
+.card-body:hover{
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28); 
+}
+/* .col-md-4{
+    margin: auto;
+} */
+
+/* .col-md-8{
+    margin: auto;
+} */
+
+.imageCommencement {
+    width: 100%;
+}
+
+.imageLibrairie {
+    width: 100%; 
+    max-height: 179px;   
+    margin-bottom: 0.8em;
+}
+.imageFrance {    
+    width: 100%;
+    max-height: 179px;     
+    margin-bottom: 0.8em;
+}
 
 /* footer */
 .listeFooter {
