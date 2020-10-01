@@ -79,15 +79,21 @@
       </nav>
     
     <main>
+      <!-- Haut de page -->
       <img class = "mangaHeadImage"
       src = https://i.servimg.com/u/f42/17/42/10/51/baniar10.jpg
       alt = "Illustrations de nombreux personnages rassemblés">
-      <h1>Découvrez ou redécouvrez vos meilleurs mangas !</h1>
+      <h1>Découvrez ou redécouvrez les 10 meilleurs mangas de l'histoire !</h1>
 
+      <!-- Insertion des cartes du classement sur la même ligne -->
       <div class = "classement row">
-        
-      <div class="card mb-3 mangaCard shadow col-md-6">
+      
+      <!-- Insertion carte 1 -->
+      <!-- Espace pris par la carte en vertical et horizontal avec classes bootstrap + ombre et classe CSS-->
+      <div class="card mb-3 mangaCard shadow col-md-5">
+        <!-- Prise en compte du contenu sur une ligne no-gutters -->
         <div class="row no-gutters">
+          <!-- Espace pris par la colonne image -->
           <div class="col-md-4">
             <span class="badge badge-pill badge-warning mangaBadge">N°1</span>
             <img 
@@ -95,9 +101,10 @@
               class="card-img-top shadow mangaCardImage"
               alt="Illustration du manga One Piece">
           </div>
-          <div class="col-md-6">
+          <!-- Espace pris par la colonne corps de la carte -->
+          <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">N°1 : One Piece</h5>
+              <h3 class="mangaCardTitle">N°1 : One Piece</h3>
               <div class="mangaCardList">
                 <ul class="mangaCardListDetails list-group list-group-flush">
                   <li class="list-group-item">Auteur(s) : Eiichiro Oda</li>
@@ -112,305 +119,581 @@
           </div>
           <div>
             <p class="card-text text-justify cardMangaText">Nous sommes à l'ère des pirates. Luffy, un garçon espiègle, rêve de devenir le roi des pirates en trouvant le “One Piece”, un fabuleux trésor. Seulement, Luffy a avalé un fruit du démon qui l'a transformé en homme élastique. Depuis, il est capable de contorsionner son corps dans tous les sens, mais il a perdu la faculté de nager. Avec l'aide de ses précieux amis, il va devoir affronter de redoutables pirates dans des aventures toujours plus rocambolesques.</p>
+          </div>     
+        </div>
+
+        <!-- Button trigger modal -->
+        <div class="d-flex flex-row-reverse bd-highlight">
+          <div class="p-2 bd-highlight">
+            <button type="button" class="btn btn-primary mangaDetailButton" data-toggle="modal" data-target="#exampleModalLong1">Détails</button>
           </div>
-          <!-- Button trigger modal -->
-          
-          <button type="button" class="btn btn-primary mangaDetailButton" data-toggle="modal" data-target="#exampleModalLong">Détails</button>
-          
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLongTitle">En savoir plus sur l'histoire de One Piece</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                 <p class = "mangaDetailText text-justify">One Piece (ワンピース, Wan Pīsu?) est une série de mangas shōnen créée par Eiichirō Oda. Elle est prépubliée depuis le 22 juillet 1997 dans le magazine hebdomadaire Weekly Shōnen Jump, puis regroupée en volumes reliés aux éditions Shūeisha depuis le 24 décembre 1997. En avril 2020, 97 tomes et plus de 980 chapitres sont commercialisés au Japon. La version française est publiée directement en volume reliés depuis le 1er septembre 2000 par Glénat. 95 volumes sont commercialisés en juillet 2020 en France. Depuis le 3 juillet 2013, une réédition a été éditée pour cause de problèmes de droit avec l'ancien traducteur.
-                  L'histoire suit les aventures de Monkey D. Luffy, un garçon dont le corps a acquis les propriétés du caoutchouc après avoir mangé par inadvertance un fruit du démon. Avec son équipage de pirates, appelé l'équipage de Chapeau de paille, Luffy explore Grand Line à la recherche du trésor ultime connu sous le nom de « One Piece » afin de devenir le prochain roi des pirates.
-                  Les droits de la série sont acquis par la société Toei Animation qui adapte le manga en anime, cette version est diffusée au Japon chaque dimanche depuis 1999. La série compte plus de 930 épisodes en 2020. Dans les pays francophones, les droits de l'anime sont possédés par Kana Home Video. Il est disponible sur les plates-formes de streaming Anime Digital Network et Crunchyroll. Il est aussi diffusé sur les chaînes J-One, Game One et MCM. La licence compte 14 films, 11 épisodes spéciaux et 1 OAV, ainsi que 4 romans, 1 livre de recettes, plus de 50 jeux vidéo, plus de 5000 figurines1, un restaurant, un parc d’attraction, et une série live prévue pour 20202.
-                  One Piece est le manga le plus vendu au monde (dépassant Dragon Ball de Akira Toriyama3), avec plus de 470 millions d'exemplaires en circulation en mars 20204 ; c'est également la série la plus vendue au monde dessinée par un seul auteur5, ainsi que la deuxième série la plus vendue derrière Superman (600 millions d'exemplaires). Au Japon, le tirage total des tomes de One Piece s'élève à 380 millions d'exemplaires, chaque tome se classant à la première place dès sa sortie. Le record est détenu par le tome 67 qui s'est vendu à plus de 4,05 millions d'exemplaires. Dans le reste du monde, le tirage s'élève à 75 millions d'exemplaires (dans 42 pays)6. En France, la série est devenue leader en 2011 et s'est vendue à 6,5 millions d'exemplaires depuis sa sortie. </p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">En savoir plus sur l'histoire de One Piece</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p class = "mangaDetailText text-justify">One Piece (ワンピース, Wan Pīsu) est une série de mangas shōnen créée par Eiichirō Oda. Elle est prépubliée depuis le 22 juillet 1997 dans le magazine hebdomadaire Weekly Shōnen Jump, puis regroupée en volumes reliés aux éditions Shūeisha depuis le 24 décembre 1997. En avril 2020, 97 tomes et plus de 980 chapitres sont commercialisés au Japon. La version française est publiée directement en volume reliés depuis le 20 septembre 2000 par Glénat. 95 volumes sont commercialisés en juillet 2020 en France. Depuis le 3 juillet 2013, une réédition a été éditée pour cause de problèmes de droit avec l'ancien traducteur.<br/><br/>
+                L'histoire suit les aventures de Monkey D. Luffy, un garçon dont le corps a acquis les propriétés du caoutchouc après avoir mangé par inadvertance un fruit du démon. Avec son équipage de pirates, appelé l'équipage de Chapeau de paille, Luffy explore Grand Line à la recherche du trésor ultime connu sous le nom de « One Piece » afin de devenir le prochain roi des pirates.<br/><br/>
+                Les droits de la série sont acquis par la société Toei Animation qui adapte le manga en anime, cette version est diffusée au Japon chaque dimanche depuis 1999. La série compte plus de 930 épisodes en 2020. Dans les pays francophones, les droits de l'anime sont possédés par Kana Home Video. Il est disponible sur les plates-formes de streaming Anime Digital Network et Crunchyroll. Il est aussi diffusé sur les chaînes J-One, Game One et MCM. La licence compte 14 films, 11 épisodes spéciaux et 1 OAV, ainsi que 4 romans, 1 livre de recettes, plus de 50 jeux vidéo, plus de 5000 figurines, un restaurant, un parc d’attraction, et une série live prévue pour 20202.<br/><br/>
+                One Piece est le manga le plus vendu au monde (dépassant Dragon Ball de Akira Toriyama), avec plus de 470 millions d'exemplaires en circulation en mars 2020. C'est également la série la plus vendue au monde dessinée par un seul auteur5, ainsi que la deuxième série la plus vendue derrière Superman (600 millions d'exemplaires). Au Japon, le tirage total des tomes de One Piece s'élève à 380 millions d'exemplaires, chaque tome se classant à la première place dès sa sortie. Le record est détenu par le tome 67 qui s'est vendu à plus de 4,05 millions d'exemplaires. Dans le reste du monde, le tirage s'élève à 75 millions d'exemplaires (dans 42 pays). En France, la série est devenue leader en 2011 et s'est vendue à 6,5 millions d'exemplaires depuis sa sortie.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="card mb-3 mangaCard shadow col-md-6">
+        
+      <div class="card mb-3 mangaCard shadow col-md-5">
         <div class="row no-gutters">
           <div class="col-md-4">
-            <span class="badge badge-pill badge-warning">N°2</span>
+            <span class="badge badge-pill badge-warning mangaBadge">N°2</span>
             <img
               src = https://media.senscritique.com/media/000019266699/source_big/Dragon_Ball.png
               class="card-img-top shadow mangaCardImage"
               alt = "Illustration du manga Dragon Ball">
           </div>
-          <div class="col-md-6">
+          <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">N°2 : Dragon Ball</h5>
+              <h3 class="mangaCardTitle">N°2 : Dragon Ball</h3>
               <div class="mangaCardList">
-                <ul class="mangaCardListDetails">
-                  <li>Auteur(s) : Akira Toriyama</li>
-                  <li>Dessinateur(s) : Akira Toriyama</li>
-                  <li>Titre original : Doragon Bōru</li>
-                  <li>Langue d'origine : Japonais</li>
-                  <li>Date de sortie dans le pays d'origine : 20 novembre 1984</li>
-                  <li>Date de sortie en France : 20 novembre 1984</li>
+                <ul class="mangaCardListDetails list-group list-group-flush">
+                  <li class="list-group-item">Auteur(s) : Akira Toriyama</li>
+                  <li class="list-group-item">Dessinateur(s) : Akira Toriyama</li>
+                  <li class="list-group-item">Titre original : Doragon Bōru</li>
+                  <li class="list-group-item">Langue d'origine : Japonais</li>
+                  <li class="list-group-item">Date de sortie dans le pays d'origine : 20 novembre 1984</li>
+                  <li class="list-group-item">Date de sortie en France : 20 novembre 1984</li>
                 </ul>
               </div>
             </div>
           </div>
           <div>
-            <p class="card-text text-justify cardMangaText">Son Goku, un enfant étrange vivant seul dans la forêt, rencontre Bulma, une jeune fille de la ville, et décide de la suivre à travers le monde à la recherche de 7 boules de cristal appelées Dragon Ball. Dispersées sur la Terre, ces Dragon Balls, une fois réunies, font apparaître Shenron, le Dragon sacré, qui exauce le souhait de la personne l'ayant invoqué. Au cours de leur parcours initiatique, ils font de nombreuses rencontres. Son Goku, qui n'était jamais sorti de sa forêt, est amené à suivre un apprentissage auprès de Maîtres et à participer à plusieurs championnats du monde d'arts martiaux.</p>
+            <p class="card-text text-justify mangaCardText">Son Goku, un enfant étrange vivant seul dans la forêt, rencontre Bulma, une jeune fille de la ville, et décide de la suivre à travers le monde à la recherche de 7 boules de cristal appelées Dragon Ball. Dispersées sur la Terre, ces Dragon Balls, une fois réunies, font apparaître Shenron, le Dragon sacré, qui exauce le souhait de la personne l'ayant invoqué. Au cours de leur parcours initiatique, ils font de nombreuses rencontres. Son Goku, qui n'était jamais sorti de sa forêt, est amené à suivre un apprentissage auprès de Maîtres et à participer à plusieurs championnats du monde d'arts martiaux.</p>
+          </div>
+        </div>
+
+        <!-- Button trigger modal -->
+        <div class="d-flex flex-row-reverse bd-highlight">
+          <div class="p-2 bd-highlight">
+           <button type="button" class="btn btn-primary mangaDetailButton" data-toggle="modal" data-target="#exampleModalLong2">Détails</button>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+             <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">En savoir plus sur l'histoire de Dragon Ball</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                <p class = "mangaDetailText text-justify">Dragon Ball (ドラゴンボール, Doragon Bōru, litt. Dragon Ball) est une série de mangas créée par Akira Toriyama, celui-ci s'inspirant librement du roman de Wu Cheng'en La Pérégrination vers l'Ouest. Publiée pour la première fois dans le magazine Weekly Shōnen Jump de 1984 à 1995 et éditée en albums de 1985 à 1995 par Shūeisha. Glénat publie l'édition française depuis février 1993.<br/><br>
+                  C'est chronologiquement la quatorzième histoire d'Akira Toriyama. L'action se déroule dans un univers imaginaire ayant des ressemblances avec la Terre, The World, dans lequel se situent d'autres œuvres du même mangaka. Ainsi, l'auteur intègre parfois des personnages appartenant à une histoire différente, en signe de connivence avec le lecteur. Dragon Ball raconte le parcours de Son Goku, depuis l'enfance jusqu'à l'âge adulte. Accompagné de nombreux personnages, il cherche à plusieurs reprises les sept Dragon Balls. Il s'agit de boules de cristal magiques qui permettent, si elles sont réunies, de faire apparaître le dragon Shenron, capable d'exaucer le souhait que quiconque prononce face à lui, grâce à une formule spécifique. Tout au long de sa vie, Son Goku est amené à combattre des adversaires de plus en plus forts, dont certains deviennent des alliés.<br/><br/>
+                  Avec plus de 230 millions d'exemplaires écoulés en 2013, ce shōnen est donc l'une des bandes dessinées les plus vendues à travers le monde et le deuxième manga le plus vendu au monde derrière One Piece (en 2018). C'est aussi un titre majeur au moment de l'éclosion du manga en Europe, à la fin des années 1980. Dragon Ball s'inscrit dans la culture de masse en tant que phénomène culturel ; de nombreux films, jeux vidéo et autres produits dérivés en sont issus.<br/><br/>
+                  Contrairement au manga, l'anime se divise en deux parties distinctes. Celles-ci sont séparées en fonction de l'évolution du personnage principal : Dragon Ball pour la jeunesse et Dragon Ball Z pour l'âge adulte. Si la première a une tonalité globale rocambolesque et loufoque (en dépit de moments tragiques), la seconde, en revanche, met l'accent sur la violence physique et le développement psychologique des différents protagonistes9, ne conservant que de très occasionnelles pauses humoristiques. Il existe quatre autres anime : Dragon Ball GT qui est une suite alternative, Dragon Ball Z Kai qui se présente comme une nouvelle version animée de Dragon Ball Z, expurgée des longueurs et des passages qui ne figuraient pas dans le manga original (faisant passer le compte de 291 à 167 épisodes), et Dragon Ball Super qui est une suite directe au manga. Super Dragon Ball Heroes ne rentre pas dans la continuité avec le manga original.<br/><br/>
+                  En 2007, les Japonais classent Dragon Ball « troisième meilleur manga de tous les temps » à l'occasion du dixième anniversaire du Festival d'art japonais de l'Agence des affaires Culturelles, derrière Slam Dunk et JoJo's Bizarre Adventure.<br/><br/>
+                  En France, l'adaptation en série animée, en particulier la deuxième série Dragon Ball Z, suscita la controverse. La violence omniprésente dans cette série et quelques autres (Les Chevaliers du Zodiaque, Nicky Larson, et surtout Ken le survivant) fit débat, alors que celles-ci étaient diffusées dans une émission destinées aux enfants, le Club Dorothée sur TF1 – de 1988 à 1994 pour Dragon Ball et de 1990 à 1996 pour Dragon Ball Z (au Japon, la série était plus orientée vers un public adolescent). Dans une moindre mesure, la polémique se poursuivit à son arrivée sur le marché de la bande dessinée, la France ayant la particularité d'avoir d'abord connu la série télévisée.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="card mb-3 mangaCard shadow col-md-6">
+      <div class="card mb-3 mangaCard shadow col-md-5">
         <div class="row no-gutters">
           <div class="col-md-4">
-            <span class="badge badge-pill badge-warning">N°3</span>
+            <span class="badge badge-pill badge-warning mangaBadge">N°3</span>
             <img
               src = https://www.manga-news.com/public/images/series/death_note_01.jpg
               class="card-img-top shadow mangaCardImage"
               alt = "Illustration du manga Death Note">
           </div>
-          <div class="col-md-6">
+          <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">N°3 : Death Note</h5>
+              <h3 class="mangaCardTitle">N°3 : Death Note</h3>
               <div class="mangaCardList">
-                <ul class="mangaCardListDetails">
-                  <li>Auteur(s) : Tsugumi Ōba</li>
-                  <li>Dessinateur(s) : Takeshi Obata</li>
-                  <li>Titre original : Desu Nōto</li>
-                  <li>Langue d'origine : Japonais</li>
-                  <li>Date de sortie dans le pays d'origine : Décembre 2003</li>
-                  <li>Date de sortie en France : non paru </li>
+                <ul class="mangaCardListDetails list-group list-group-flush">
+                  <li class="list-group-item">Auteur(s) : Tsugumi Ōba</li>
+                  <li class="list-group-item">Dessinateur(s) : Takeshi Obata</li>
+                  <li class="list-group-item">Titre original : Desu Nōto</li>
+                  <li class="list-group-item">Langue d'origine : Japonais</li>
+                  <li class="list-group-item">Date de sortie dans le pays d'origine : Décembre 2003</li>
+                  <li class="list-group-item">Date de sortie en France : Janvier 2007 </li>
                 </ul>
               </div>
             </div>
           </div>
           <div>
-            <p class="card-text text-justify cardMangaText">Light Yagami est un lycéen surdoué qui juge le monde actuel criminel, pourri et corrompu. Sa vie change du tout au tout le jour où il ramasse, par hasard, un mystérieux cahier intitulé « Death Note ». Son mode d'emploi indique que « la personne dont le nom est écrit dans ce cahier meurt dans les 40 secondes !». D'abord sceptique, Light décide toutefois de tester le cahier et découvre que son pouvoir est bien réel. Light Yagami ramasse un étrange carnet.</p>
+            <p class="card-text text-justify mangaCardText">Light Yagami est un lycéen surdoué qui juge le monde actuel criminel, pourri et corrompu. Sa vie change du tout au tout le jour où il ramasse, par hasard, un mystérieux cahier intitulé « Death Note ». Son mode d'emploi indique que la personne dont le nom est écrit dans ce cahier meurt dans les 40 secondes ! D'abord sceptique, Light décide toutefois de tester le cahier et découvre que son pouvoir est bien réel. Light décide d'utiliser le Death Note pour exterminer les criminels, dans le but de bâtir un monde parfait dont il sera le dieu.</p>
+          </div>
+        </div>
+
+        <!-- Button trigger modal -->
+        <div class="d-flex flex-row-reverse bd-highlight">
+          <div class="p-2 bd-highlight">
+            <button type="button" class="btn btn-primary mangaDetailButton" data-toggle="modal" data-target="#exampleModalLong3">Détails</button>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalLong3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">En savoir plus sur l'histoire de Death Note</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                <p class = "mangaDetailText text-justify">Death Note (デスノート, Desu Nōto?, littéralement Cahier de la Mort) est un shōnen manga écrit par Tsugumi Ōba et dessiné par Takeshi Obata. Il est prépublié dans le magazine Weekly Shōnen Jump de décembre 2003 à mai 2006, par la suite publié en douze tankōbon depuis mai 2004 jusqu'à octobre 2006 par Shūeisha. La version française est éditée par Kana de janvier 2007 jusqu'à octobre 2008.<br/><br/>
+                  À la suite du succès du manga, une adaptation en anime de 37 épisodes est réalisée par Tetsurō Araki au sein du studio Madhouse et diffusée du 3 octobre 2006 au 26 juin 2007 sur Nippon Television au Japon. En France, l'anime est diffusé à partir du 2 février 2008 sur MCM et de décembre 2008 sur Virgin 17.<br/><br/>               
+                  Death Note est également adapté en trois films live, sortis au Japon entre 2006 et 2008, puis directement en DVD en France par Kazé. Une adaptation en drama est également diffusée en 2015 sur Nippon TV au Japon et en simulcast sur Crunchyroll dans les pays francophones. Plus récemment, il a été repris dans un film du même nom sorti sur Netflix en 2017.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="card mb-3 mangaCard shadow col-md-6">
+      <div class="card mb-3 mangaCard shadow col-md-5">
         <div class="row no-gutters">
           <div class="col-md-4">
-            <span class="badge badge-pill badge-dark">N°4</span>
+            <span class="badge badge-pill badge-warning mangaBadge">N°4</span>
             <img
               src = https://media.senscritique.com/media/000019266535/source_big/Fullmetal_Alchemist.jpg
               class="card-img-top shadow mangaCardImage"
               alt = "Illustration du manga Fullmetal Alchemist">
           </div>
-          <div class="col-md-6">
+          <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">N°4 : Fullmetal Alchemist</h5>
+              <h3 class="mangaCardTitle">N°4 : Fullmetal Alchemist</h3>
               <div class="mangaCardList">
-                <ul class="mangaCardListDetails">
-                  <li>Auteur(s) : Hiromu Arakawa</li>
-                  <li>Dessinateur(s) : Hiromu Arakawa</li>
-                  <li>Titre original : Hagane no Renkinjutsushi</li>
-                  <li>Langue d'origine : Japonais</li>
-                  <li>Date de sortie dans le pays d'origine : 12 juillet 2001</li>
-                  <li>Date de sortie en France : 8 septembre 2005</li>
+                <ul class="mangaCardListDetails list-group list-group-flush">
+                  <li class="list-group-item">Auteur(s) : Hiromu Arakawa</li>
+                  <li class="list-group-item">Dessinateur(s) : Hiromu Arakawa</li>
+                  <li class="list-group-item">Titre original : Hagane no Renkinjutsushi</li>
+                  <li class="list-group-item">Langue d'origine : Japonais</li>
+                  <li class="list-group-item">Date de sortie dans le pays d'origine : 12 juillet 2001</li>
+                  <li class="list-group-item">Date de sortie en France : 8 septembre 2005</li>
                 </ul>
               </div>
             </div>
           </div>
           <div> 
-            <p class="card-text text-justify cardMangaText">En voulant ressusciter leur mère, Edward et Alphonse Elric vont utiliser une technique interdite relevant du domaine de l'alchimie : la transmutation humaine. Seulement, l'expérience va mal tourner : Edward perd un bras et une jambe et Alphonse son corps, son esprit se retrouvant prisonnier d'une armure.Devenu un alchimiste d'Etat, Edward, surnommé "full metal alchimiste", se lance, avec l'aide de son frère, à la recherche de la pierre philosophale, leur seule chance de retrouver leur état initial.Ils commencent à enquêter sur un étrange homme, "le fondateur" qui passe pour un faiseur de miracles...</p>
+            <p class="card-text text-justify mangaCardText">En voulant ressusciter leur mère, Edward et Alphonse Elric vont utiliser une technique interdite relevant du domaine de l'alchimie : la transmutation humaine. Seulement, l'expérience va mal tourner : Edward perd un bras et une jambe et Alphonse son corps, son esprit se retrouvant prisonnier d'une armure.Devenu un alchimiste d'Etat, Edward, surnommé "full metal alchimiste", se lance, avec l'aide de son frère, à la recherche de la pierre philosophale, leur seule chance de retrouver leur état initial.Ils commencent à enquêter sur un étrange homme, "le fondateur" qui passe pour un faiseur de miracles...</p>
+          </div>
+        </div>
+
+        <!-- Button trigger modal -->
+        <div class="d-flex flex-row-reverse bd-highlight">
+          <div class="p-2 bd-highlight">
+            <button type="button" class="btn btn-primary mangaDetailButton" data-toggle="modal" data-target="#exampleModalLong4">Détails</button>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalLong4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">En savoir plus sur l'histoire de Fullmetal Alchemist</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                <p class = "mangaDetailText text-justify">Fullmetal Alchemist (鋼の錬金術師, Hagane no Renkinjutsushi, littéralement « L'Alchimiste d'acier », souvent abrégé en Hagaren (ハガレン?) ou en FMA), est un manga d'Hiromu Arakawa. Il a été prépublié entre 2001 et 2010 dans le magazine mensuel Shōnen Gangan de la société Square Enix et a été compilé en 27 volumes reliés. La version française est publiée par Kurokawa depuis 2005.<br/><br/>
+                  Il a été adapté en série d'animation diffusée au Japon entre 2003 et 2004, un film sorti en 2005, des OAV sortis en 2006 ainsi que plusieurs jeux vidéo. Entre 2009 et 2010, est diffusée une nouvelle adaptation animée intitulée Fullmetal Alchemist : Brotherhood, et reprenant la trame du manga de manière plus fidèle.<br/><br/>           
+                  Un film en prise de vue réelle, Fullmetal Alchemist, est sorti en 2017.<br/><br/>
+                  Dans le pays d'Amestris, pays où l'Alchimie est élevée au rang de science universelle, deux frères, Edward et Alphonse Elric parcourent le monde à la recherche de la légendaire pierre philosophale dans le but de retrouver leurs corps perdus. Leur père, Van Hohenheim, les a quittés il y a de cela des années, et leur mère Trisha Elric meurt quelques années plus tard d'une maladie, laissant ses deux jeunes enfants derrière elle. Un an plus tard, les deux frères tentent de la faire revenir grâce à l'alchimie, bravant la loi qui interdit formellement la transmutation humaine. Ils en payent le prix fort. Edward, l'ainé, perd sa jambe gauche, son petit frère perd son corps tout entier. Ed sacrifie son bras droit en scellant l'âme de son petit frère Alphonse dans une armure. Edward décide de s'engager dans l'armée à l'âge de douze ans en tant qu'Alchimiste d'État, réussit l'examen haut la main et obtient son nom d'alchimiste, le Fullmetal Alchemist. Avec les avantages liés au statut d'alchimiste d'État et leurs recherches, les deux frères cherchent, au péril de leurs vies, la pierre mythique qui leur rendra ce qu'ils ont perdu, mais le secret de la pierre est bien gardé.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="card mb-3 mangaCard shadow col-md-6">
+      <div class="card mb-3 mangaCard shadow col-md-5">
         <div class="row no-gutters">
           <div class="col-md-4">
-            <span class="badge badge-pill badge-dark">N°5</span>
+            <span class="badge badge-pill badge-warning mangaBadge">N°5</span>
             <img
               src = https://media.senscritique.com/media/000018276088/source_big/Berserk.jpg
               class="card-img-top shadow mangaCardImage"
               alt = "Illustration du manga Berserk">
           </div>
-          <div class="col-md-6">
+          <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">N°5 : Berserk</h5>
+              <h3 class="mangaCardTitle">N°5 : Berserk</h3>
               <div class="mangaCardList">
-                <ul class="mangaCardListDetails">
-                  <li>Auteur(s) : Kentaro Miura</li>
-                  <li>Dessinateur(s) : Kentaro Miura</li>
-                  <li>Titre original : Beruseruku</li>
-                  <li>Langue d'origine : Japonais</li>
-                  <li>Date de sortie dans le pays d'origine : Octobre 1989</li>
-                  <li>Date de sortie en France : 26 novembre 1990</li>
+                <ul class="mangaCardListDetails list-group list-group-flush">
+                  <li class="list-group-item">Auteur(s) : Kentaro Miura</li>
+                  <li class="list-group-item">Dessinateur(s) : Kentaro Miura</li>
+                  <li class="list-group-item">Titre original : Beruseruku</li>
+                  <li class="list-group-item">Langue d'origine : Japonais</li>
+                  <li class="list-group-item">Date de sortie dans le pays d'origine : Octobre 1989</li>
+                  <li class="list-group-item">Date de sortie en France : 26 novembre 1990</li>
                 </ul>
               </div>
             </div>
           </div>
           <div> 
-            <p class="card-text text-justify cardMangaText">Dans un monde médiéval et fantastique, erre un guerrier solitaire nommé Guts, décidé à être seul maître de son destin. Autrefois contraint par un pari perdu à rejoindre les Faucons, une troupe de mercenaires dirigés par Griffith, Guts fut acteur de nombreux combats sanglants et témoin de sombres intrigues politiques. Mais il réalisa soudain que la fatalité n'existe pas et qu'il pouvait reprendre sa liberté s'il le désirait vraiment...</p>
+            <p class="card-text text-justify mangaCardText">Dans un monde médiéval et fantastique, erre un guerrier solitaire nommé Guts, décidé à être seul maître de son destin. Autrefois contraint par un pari perdu à rejoindre les Faucons, une troupe de mercenaires dirigés par Griffith, Guts fut acteur de nombreux combats sanglants et témoin de sombres intrigues politiques. Mais il réalisa soudain que la fatalité n'existe pas et qu'il pouvait reprendre sa liberté s'il le désirait vraiment...</p>
+          </div>
+        </div>
+
+        <!-- Button trigger modal -->
+        <div class="d-flex flex-row-reverse bd-highlight">
+          <div class="p-2 bd-highlight">
+            <button type="button" class="btn btn-primary mangaDetailButton" data-toggle="modal" data-target="#exampleModalLong5">Détails</button>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalLong5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">En savoir plus sur l'histoire de Berserk</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                <p class = "mangaDetailText text-justify">Berserk (ベルセルク, Beruseruku) est un manga de dark fantasy de Kentaro Miura. Il est prépublié depuis 1989 dans le magazine Young Animal de l'éditeur Hakusensha, et 40 volumes sont sortis en septembre 2018. Le rythme de sortie de chaque tome est long car l'auteur précise qu'il porte un intérêt tout particulier au soin des détails de chaque planche. La version française est éditée par Glénat et 40 tomes sont sortis au 17 avril 2019. En juillet 2015, le tirage total de la série s'élève à 27 millions d'exemplaires au Japon et 8 millions dans le reste du monde.<br/><br/>
+                  Le manga est adapté en série d'animation de 25 épisodes entre octobre 1997 et mars 1998 par le studio OLM. Une trilogie de films d'animation produite par Studio 4°C est sortie entre 2012 et 2013. Une nouvelle adaptation animée a été diffusée entre juillet 2016 et juin 2017 par les studios GEMBA et Millepensee.<br/><br/>                  
+                  Destiné à un public mature, Berserk jouit au Japon d'une popularité relative en termes de ventes si on le compare à d'autres séries pour adultes telles que JoJo's Bizarre Adventure ou Golgo 13, ceci étant dû à la fréquence de sortie de ses albums ainsi que son univers dark fantasy, jusqu'alors peu implanté dans la culture manga. Néanmoins son intensité, son style visuel extrêmement fourni et détaillé ainsi que la gravité de ses thématiques ont fait de ce dernier l'un des seinen les plus populaires de son époque, notamment à l'étranger.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="card mb-3 mangaCard shadow col-md-6">
+      <div class="card mb-3 mangaCard shadow col-md-5">
         <div class="row no-gutters">
           <div class="col-md-4">
-            <span class="badge badge-pill badge-dark">N°6</span>
+            <span class="badge badge-pill badge-warning mangaBadge">N°6</span>
             <img
               src = https://media.senscritique.com/media/000015536243/source_big/Naruto.jpg
               class="card-img-top shadow mangaCardImage"
               alt = "Illustration du manga Naruto">
           </div>
-          <div class="col-md-6">
+          <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">N°6 : Naruto</h5>
+              <h3 class="mangaCardTitle">N°6 : Naruto</h3>
               <div class="mangaCardList">
-                <ul class="mangaCardListDetails">
-                  <li>Auteur(s) : Masashi Kishimoto</li>
-                  <li>Dessinateur(s) : Masashi Kishimoto</li>
-                  <li>Titre original : Naruto</li>
-                  <li>Langue d'origine : Japonais</li>
-                  <li>Date de sortie dans le pays d'origine : Octobre 1999</li>
-                  <li>Date de sortie en France : Octobre 1999</li>
+                <ul class="mangaCardListDetails list-group list-group-flush">
+                  <li class="list-group-item">Auteur(s) : Masashi Kishimoto</li>
+                  <li class="list-group-item">Dessinateur(s) : Masashi Kishimoto</li>
+                  <li class="list-group-item">Titre original : Naruto</li>
+                  <li class="list-group-item">Langue d'origine : Japonais</li>
+                  <li class="list-group-item">Date de sortie dans le pays d'origine : Octobre 1999</li>
+                  <li class="list-group-item">Date de sortie en France : Octobre 1999</li>
                 </ul>
               </div>
             </div>
           </div>
           <div> 
-            <p class="card-text text-justify cardMangaText">Solitaire et rejeté, Naruto est un garçon doté de pouvoirs extraordinaires. En quête de reconnaissance, il décide de devenir le plus grand chef ninja de son village. Au début craint et méprisé par ses pairs, Naruto va peu à peu monter en puissance et gagner le respect et l'affection des villageois grâce, notamment, aux combats dantesques qu'il remportera face aux ennemis les plus puissants de Konoha.</p>
+            <p class="card-text text-justify mangaCardText">Solitaire et rejeté, Naruto est un garçon doté de pouvoirs extraordinaires. En quête de reconnaissance, il décide de devenir le plus grand chef ninja de son village. Au début craint et méprisé par ses pairs, Naruto va peu à peu monter en puissance et gagner le respect et l'affection des villageois grâce, notamment, aux combats dantesques qu'il remportera face aux ennemis les plus puissants de Konoha.</p>
+          </div>
+        </div>
+
+        <!-- Button trigger modal -->
+        <div class="d-flex flex-row-reverse bd-highlight">
+          <div class="p-2 bd-highlight">
+            <button type="button" class="btn btn-primary mangaDetailButton" data-toggle="modal" data-target="#exampleModalLong6">Détails</button>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalLong6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">En savoir plus sur l'histoire de Naruto</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                <p class = "mangaDetailText text-justify">Naruto (ナルト?) est un shōnen manga écrit et dessiné par Masashi Kishimoto. Naruto a été prépublié dans l'hebdomadaire Weekly Shōnen Jump de l'éditeur Shūeisha entre septembre 1999 et novembre 2014. La série a été compilée en 72 tomes.<br/><br/>
+                  La version française du manga est publiée par Kana entre mars 2002 et novembre 2016.<br/><br/>                  
+                  À la suite de son succès sous forme de manga, une adaptation en anime est réalisée par les studios Pierrot et Aniplex et est diffusée sur TV Tokyo depuis le 3 octobre 2002. Une seconde partie du récit a aussi vu le jour et a été renommée Naruto Shippuden lors de son adaptation. La série animée est diffusée en France depuis le 2 janvier 2006 sur Game One ainsi que sur NT1 et sur Cartoon Network depuis la rentrée 2007. En Belgique, elle est diffusée sur Club RTL depuis la rentrée 2008. Game One diffuse aussi depuis le 5 septembre 2008 la seconde série : Naruto Shippuden. Les épisodes sont également proposés en version originale sous-titrée en français en simulcast sur J-One, Netflix et Anime Digital Network.<br/><br/>
+                  Avec plus de 250 millions de copies, Naruto est le troisième manga le plus vendu dans le monde (après One Piece et Dragon Ball) et l'une des bandes dessinées les plus vendues au monde. En raison de son succès, des récits inédits sont également produits régulièrement sous forme de longs métrages d'animation entre 2004 et 2015.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="card mb-3 mangaCard shadow col-md-6">
+      <div class="card mb-3 mangaCard shadow col-md-5">
         <div class="row no-gutters">
           <div class="col-md-4">
-            <span class="badge badge-pill badge-dark">N°7</span>
+            <span class="badge badge-pill badge-warning mangaBadge">N°7</span>
             <img
               src = https://media.senscritique.com/media/000015332347/source_big/Akira.jpg
               class="card-img-top shadow mangaCardImage"
               alt = "Illustration du manga Akira">
           </div>
-          <div class="col-md-6">
+          <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">N°7 : Akira</h5>
+              <h3 class="mangaCardTitle">N°7 : Akira</h3>
               <div class="mangaCardList">
-                <ul class="mangaCardListDetails">
-                  <li>Auteur(s) : Katsuhiro Ôtomo</li>
-                  <li>Dessinateur(s) : Katsuhiro Ôtomo</li>
-                  <li>Titre original : Akira</li>
-                  <li>Langue d'origine : Japonais</li>
-                  <li>Date de sortie dans le pays d'origine : 6 décembre 1982</li>
-                  <li>Date de sortie en France : 20 décembre 1982</li>
+                <ul class="mangaCardListDetails list-group list-group-flush">
+                  <li class="list-group-item">Auteur(s) : Katsuhiro Ôtomo</li>
+                  <li class="list-group-item">Dessinateur(s) : Katsuhiro Ôtomo</li>
+                  <li class="list-group-item">Titre original : Akira</li>
+                  <li class="list-group-item">Langue d'origine : Japonais</li>
+                  <li class="list-group-item">Date de sortie dans le pays d'origine : 6 décembre 1982</li>
+                  <li class="list-group-item">Date de sortie en France : 20 décembre 1982</li>
                 </ul>
               </div>
             </div>
           </div>
           <div> 
-            <p class="card-text text-justify cardMangaText">En 2019, Neo-Tokyo est une mégapole corrompue et sillonnée par des bandes de jeunes motards désœuvrés et drogués. Une nuit, l’un d'eux, Tetsuo, a un accident de moto en essayant d'éviter un étrange garçon qui se trouve sur son chemin. Blessé, Tetsuo est capturé par l’armée japonaise. Il est l’objet de nombreux tests dans le cadre d’un projet militaire ultra secret. Lorsqu'il s’évade et se retrouve en liberté, il n’est plus le même… Tetsuo teste ses nouveaux pouvoirs et veut s’imposer comme un leader parmi les junkies, ce qui ne plaît pas à tout le monde.</p>
+            <p class="card-text text-justify mangaCardText">En 2019, Neo-Tokyo est une mégapole corrompue et sillonnée par des bandes de jeunes motards désœuvrés et drogués. Une nuit, l’un d'eux, Tetsuo, a un accident de moto en essayant d'éviter un étrange garçon qui se trouve sur son chemin. Blessé, Tetsuo est capturé par l’armée japonaise. Il est l’objet de nombreux tests dans le cadre d’un projet militaire ultra secret. Lorsqu'il s’évade et se retrouve en liberté, il n’est plus le même… Tetsuo teste ses nouveaux pouvoirs et veut s’imposer comme un leader parmi les junkies, ce qui ne plaît pas à tout le monde.</p>
+          </div>
+        </div>
+
+        <!-- Button trigger modal -->
+        <div class="d-flex flex-row-reverse bd-highlight">
+          <div class="p-2 bd-highlight">
+            <button type="button" class="btn btn-primary mangaDetailButton" data-toggle="modal" data-target="#exampleModalLong7">Détails</button>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalLong7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">En savoir plus sur l'histoire d'Akira</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                <p class = "mangaDetailText text-justify">Akira (アキラ) est une série de seinen manga de science-fiction écrite et illustrée par Katsuhiro Ōtomo. Elle est prépubliée dans le magazine Young Magazine de l'éditeur Kōdansha à partir de 1982 et se termine en 1990. Elle est ensuite publiée en six volumes reliés de 1984 à 1993. L'œuvre comporte 120 épisodes et environ 2 200 planches.<br/><br/>
+                  Akira est récompensé par le Prix du manga de son éditeur Kōdansha en 1984, catégorie Général (seinen). Ce manga a nettement participé à la diffusion du manga en Occident.<br/><br/>
+                  En 1988, Akira est adapté en un film d'animation, également réalisé par Katsuhiro Ōtomo, sous le même titre, Akira.<br/><br/>
+                  Tokyo est détruite par une mystérieuse explosion le 6 décembre 1982 et cela déclenche la Troisième Guerre mondiale avec la destruction de nombreuses cités par des armes nucléaires.<br/><br/>
+                  En 2019, Neo-Tokyo est une mégapole corrompue et sillonnée par des bandes de jeunes motards désœuvrés et drogués. Une nuit, l’un d'eux, Tetsuo, a un accident de moto en essayant d'éviter un étrange garçon qui se trouve sur son chemin. Blessé, Tetsuo est capturé par l’armée japonaise. Il est l’objet de nombreux tests dans le cadre d’un projet militaire ultra secret visant à repérer et former des êtres possédant des prédispositions à des pouvoirs psychiques (télépathie, téléportation, télékinésie, etc.). Les amis de Tetsuo, dont leur chef Kaneda, veulent savoir ce qui lui est arrivé, car quand il s’évade et se retrouve en liberté, il n’est plus le même… Tetsuo teste ses nouveaux pouvoirs et veut s’imposer comme un leader parmi les junkies, ce qui ne plaît pas à tout le monde, en particulier à Kaneda.<br/><br/>                  
+                  En parallèle se nouent des intrigues politiques : l’armée essaye par tous les moyens de continuer le projet en espérant percer le secret de la puissance d’Akira, un enfant doté de pouvoirs psychiques extraordinaires (et de la maîtriser pour s'en servir par la suite), tandis que les politiciens ne voient pas l’intérêt de continuer à allouer de l’argent à un projet de plus de 30 ans qui n'a jamais rien rapporté. Le phénomène Akira suscite également l’intérêt d’un mouvement révolutionnaire qui veut se l’approprier à des fins religieuses (Akira serait considéré comme un « sauveur » par ses fidèles). Tetsuo va se retrouver malgré lui au centre d’une lutte entre les révolutionnaires et le pouvoir en place.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="card mb-3 mangaCard shadow col-md-6">
+      <div class="card mb-3 mangaCard shadow col-md-5">
         <div class="row no-gutters">
           <div class="col-md-4">
-            <span class="badge badge-pill badge-dark">N°8</span>
+            <span class="badge badge-pill badge-warning mangaBadge">N°8</span>
             <img
               src = https://media.senscritique.com/media/000018657250/source_big/GTO.png
               class="card-img-top shadow mangaCardImage"
               alt = "Illustration du manga GTO">
           </div>
-          <div class="col-md-6">
+          <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">N°8 : GTO</h5>
+              <h3 class="mangaCardTitle">N°8 : GTO</h3>
               <div class="mangaCardList">
-                <ul class="mangaCardListDetails">
-                  <li>Auteur(s) : Tôru Fujisawa</li>
-                  <li>Dessinateur(s) : Tôru Fujisawa</li>
-                  <li>Titre original : Gurēto Tīchā Onizuka</li>
-                  <li>Langue d'origine : Japonais</li>
-                  <li>Date de sortie dans le pays d'origine : 16 mai 1997</li>
-                  <li>Date de sortie en France : 20 février 2001</li>
+                <ul class="mangaCardListDetails list-group list-group-flush">
+                  <li class="list-group-item">Auteur(s) : Tôru Fujisawa</li>
+                  <li class="list-group-item">Dessinateur(s) : Tôru Fujisawa</li>
+                  <li class="list-group-item">Titre original : Gurēto Tīchā Onizuka</li>
+                  <li class="list-group-item">Langue d'origine : Japonais</li>
+                  <li class="list-group-item">Date de sortie dans le pays d'origine : 16 mai 1997</li>
+                  <li class="list-group-item">Date de sortie en France : 20 février 2001</li>
                 </ul>
               </div>
             </div>
           </div>
           <div> 
-            <p class="card-text text-justify cardMangaText">Ancien voyou, chef de gang, Eikichi Onizuka décide un jour de devenir prof. Sa vocation n’a rien de pédagogique. Ce qu’il veut, c’est pouvoir sortir avec les étudiantes du lycée où il travaille… Seulement, son sens de l’honneur et de la justice risquent finalement d’en faire un enseignant hors pair.</p>
+            <p class="card-text text-justify mangaCardText">Ancien voyou, chef de gang, Eikichi Onizuka décide un jour de devenir prof. Sa vocation n’a rien de pédagogique. Ce qu’il veut, c’est pouvoir sortir avec les étudiantes du lycée où il travaille… Seulement, son sens de l’honneur et de la justice risquent finalement d’en faire un enseignant hors pair.</p>
+          </div>
+        </div>
+
+        <!-- Button trigger modal -->
+        <div class="d-flex flex-row-reverse bd-highlight">
+          <div class="p-2 bd-highlight">
+            <button type="button" class="btn btn-primary mangaDetailButton" data-toggle="modal" data-target="#exampleModalLong8">Détails</button>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalLong8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">En savoir plus sur l'histoire de GTO</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                <p class = "mangaDetailText text-justify">Great Teacher Onizuka (グレート・ティーチャー・オニヅカ, Gurēto Tīchā Onizuka), souvent abrégé en GTO, est un shōnen manga racontant l'histoire de Eikichi Onizuka professeur dans une école. L'histoire de GTO suit celle de Young GTO (Shonan jun'ai gumi), suivant elle-même celle de Bad Company, du même auteur (31 volumes pour Young GTO et un double volume pour Bad Company).<br/><br/>
+                  Grand succès de Tōru Fujisawa, GTO est prépublié pour la première fois dans l'hebdomadaire Weekly Shōnen Magazine au Japon en 1997, et reçoit le Prix du manga de son éditeur Kōdansha dans la catégorie « Shōnen » en 1998. La version française est éditée par Pika Édition depuis février 2001, et le 25e et dernier tome est sorti le 22 avril 2004. Une édition double comprenant au total 13 volumes est publiée par le même éditeur à partir de septembre 2011.<br/><br/>                  
+                  Le manga a été adapté en anime de 43 épisodes diffusés au Japon de juin 1999 à septembre 2000 sur Fuji Television et en France à partir d'août 2004 sur Canal+ et rediffusés en octobre 2005 sur Europe 2 TV puis en novembre 2008 sur Virgin 17, puis en drama de 12 épisodes, un épisode spécial et un film où le personnage principal est incarné par Takashi Sorimachi. Un deuxième drama a été diffusé en 2012, suivi par un troisième en 2014.<br/><br/>                  
+                  Une histoire en neuf tomes nommée GTO Shonan 14 Days se déroulant pendant l'histoire de GTO a vu le jour entre 2009 et 2011 dans le magazine Weekly Shōnen Magazine de Kōdansha. Eikichi Onizuka est également le personnage principal de GTO Paradise Lost publié depuis avril 2014 dans le magazine Weekly Young Magazine. Deux autres séries dérivées ont également vu le jour.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="card mb-3 mangaCard shadow col-md-6">
+      <div class="card mb-3 mangaCard shadow col-md-5">
         <div class="row no-gutters">
           <div class="col-md-4">
-            <span class="badge badge-pill badge-dark">N°9</span>
+            <span class="badge badge-pill badge-warning mangaBadge">N°9</span>
             <img
               src = https://media.senscritique.com/media/000005870183/source_big/Monster.jpg
               class="card-img-top shadow mangaCardImage"
               alt = "Illustration du manga Monster">
           </div>
-          <div class="col-md-6">
+          <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">N°9 : Monster</h5>
+              <h3 class="mangaCardTitle">N°9 : Monster</h3>
               <div class="mangaCardList">
-                <ul class="mangaCardListDetails">
-                  <li>Auteur(s) : Naoki Urasawa</li>
-                  <li>Dessinateur(s) : Naoki Urasawa</li>
-                  <li>Titre original : Monsutā</li>
-                  <li>Langue d'origine : Japonais</li>
-                  <li>Date de sortie dans le pays d'origine : 5 décembre 1994</li>
-                  <li>Date de sortie en France : 20 octobre 2001</li>
+                <ul class="mangaCardListDetails list-group list-group-flush">
+                  <li class="list-group-item">Auteur(s) : Naoki Urasawa</li>
+                  <li class="list-group-item">Dessinateur(s) : Naoki Urasawa</li>
+                  <li class="list-group-item">Titre original : Monsutā</li>
+                  <li class="list-group-item">Langue d'origine : Japonais</li>
+                  <li class="list-group-item">Date de sortie dans le pays d'origine : 5 décembre 1994</li>
+                  <li class="list-group-item">Date de sortie en France : 20 octobre 2001</li>
                 </ul>
               </div>
             </div>
           </div>
           <div> 
-            <p class="card-text text-justify cardMangaText">En 1986, Kenzo Tenma est un brillant neurochirurgien pratiquant son art à l'hôpital Eisler de Düsseldorf. Tenma est comblé, promis à la belle Eva Heineman, la fille du directeur de l'hôpital. Son avenir est tout tracé. Tout lui sourit... Jusqu'à la nuit où arrivent deux enfants, Anna et Johann Liebert, dont les parents ont été découverts sauvagement assassinés. En choisissant de sauver le petit garçon plutôt que le maire de la ville, le docteur perdra tout... Amour, gloire et honneur laisseront place à solitude, rupture et alcool... Surtout qu'autour des deux enfants, les morts se multiplient. Tenma n'aurait-il pas sauvé un monstre ?</p>
+            <p class="card-text text-justify mangaCardText">En 1986, Kenzo Tenma est un brillant neurochirurgien pratiquant son art à l'hôpital Eisler de Düsseldorf. Tenma est comblé, promis à la belle Eva Heineman, la fille du directeur de l'hôpital. Son avenir est tout tracé. Tout lui sourit... Jusqu'à la nuit où arrivent deux enfants, Anna et Johann Liebert, dont les parents ont été découverts sauvagement assassinés. En choisissant de sauver le petit garçon plutôt que le maire de la ville, le docteur perdra tout... Amour, gloire et honneur laisseront place à solitude, rupture et alcool... Surtout qu'autour des deux enfants, les morts se multiplient. Tenma n'aurait-il pas sauvé un monstre ?</p>
+          </div>
+        </div>
+
+        <!-- Button trigger modal -->
+        <div class="d-flex flex-row-reverse bd-highlight">
+          <div class="p-2 bd-highlight">
+            <button type="button" class="btn btn-primary mangaDetailButton" data-toggle="modal" data-target="#exampleModalLong9">Détails</button>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalLong9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">En savoir plus sur l'histoire de Monster</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                <p class = "mangaDetailText text-justify">Monster (モンスター, Monsutā) est un manga de Naoki Urasawa. Il a été prépublié dans le magazine Big Comic Original de l'éditeur Shōgakukan entre décembre 1994 et décembre 2001. Le premier volume relié est paru en juin 1995 au Japon et le 18e et dernier en février 2002. Une édition Ultimate de neuf tomes est également sortie en 2008, chaque tome reprenant deux tomes de l'ancienne édition avec une nouvelle couverture et un format plus grand.<br/></br>
+                  En France, cette œuvre est publiée aux éditions Kana dans son intégralité dans la collection Big Kana. L'édition Ultimate est également éditée sous le nom d'édition Intégrale, et les neuf tomes sont disponibles depuis août 2012.<br/><br/>                  
+                  Fort de son succès, le manga a été adapté en un anime de 74 épisodes produit par Madhouse, diffusé au Japon sur NTV entre le 7 avril 2004 et le 28 septembre 2005.<br/><br/>                  
+                  La diffusion de cet anime en France a débuté le 10 février 2006 sur Canal+ et s'est finie le 25 mai 2006. Il était diffusé sur France 4 en 2014.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="card mb-3 mangaCard shadow col-md-6">
+      <div class="card mb-3 mangaCard shadow col-md-5">
         <div class="row no-gutters">
           <div class="col-md-4">
-            <span class="badge badge-pill badge-dark">N°10</span>
+            <span class="badge badge-pill badge-warning mangaBadge">N°10</span>
             <img
               src = https://media.senscritique.com/media/000015537294/source_big/Hunter_X_Hunter.jpg
               class="card-img-top shadow mangaCardImage"
               alt = "Illustration du manga Hunter X Hunter">
           </div>
-          <div class="col-md-6">
+          <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">N°10 : Hunter X Hunter</h5>
+              <h3 class="mangaCardTitle">N°10 : Hunter X Hunter</h3>
               <div class="mangaCardList">
-                <ul class="mangaCardListDetails">
-                  <li>Auteur(s) : Yoshihiro Togashi </li>
-                  <li>Dessinateur(s) : Yoshihiro Togashi</li>
-                  <li>Titre original : Hantā Hantā</li>
-                  <li>Langue d'origine : Japonais</li>
-                  <li>Date de sortie dans le pays d'origine : 3 mars 1998</li>
-                  <li>Date de sortie en France : 3 mars 1998</li>
+                <ul class="mangaCardListDetails list-group list-group-flush">
+                  <li class="list-group-item">Auteur(s) : Yoshihiro Togashi </li>
+                  <li class="list-group-item">Dessinateur(s) : Yoshihiro Togashi</li>
+                  <li class="list-group-item">Titre original : Hantā Hantā</li>
+                  <li class="list-group-item">Langue d'origine : Japonais</li>
+                  <li class="list-group-item">Date de sortie dans le pays d'origine : 3 mars 1998</li>
+                  <li class="list-group-item">Date de sortie en France : 3 mai 2019</li>
                 </ul>
               </div>
             </div>
           </div>
           <div> 
-            <p class="card-text text-justify cardMangaText">Gon décide de quitter son village natal pour aller passer le difficile examen qui l'autorisera à devenir un hunter. Les hunters sont des citoyens d'élite autorisés à faire quasiment tout ce qu'ils souhaitent sur simple présentation de leur carte de membre : ils peuvent ainsi acquérir gratuitement tout objet à la vente sur les fonds de l'association, et sont, de facto, habilités à exercer tous les métiers du monde. Son père, Ging Freecss, qu'il ne connaît pas directement, est considéré comme un des plus grands hunters de son temps. C'est aussi pour le retrouver que Gon veut devenir hunter.</p>
+            <p class="card-text text-justify mangaCardText">Gon décide de quitter son village natal pour aller passer le difficile examen qui l'autorisera à devenir un hunter. Les hunters sont des citoyens d'élite autorisés à faire quasiment tout ce qu'ils souhaitent sur simple présentation de leur carte de membre : ils peuvent ainsi acquérir gratuitement tout objet à la vente sur les fonds de l'association, et sont, de facto, habilités à exercer tous les métiers du monde. Son père, Ging Freecss, qu'il ne connaît pas directement, est considéré comme un des plus grands hunters de son temps. C'est aussi pour le retrouver que Gon veut devenir hunter.</p>
+          </div>
+        </div>
+
+        <!-- Button trigger modal -->
+        <div class="d-flex flex-row-reverse bd-highlight">
+          <div class="p-2 bd-highlight">
+            <button type="button" class="btn btn-primary mangaDetailButton" data-toggle="modal" data-target="#exampleModalLong10">Détails</button>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalLong10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">En savoir plus sur l'histoire de Hunter X Hunter</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                <p class = "mangaDetailText text-justify">Hunter × Hunter (ハンターハンター, Hantā Hantā) est un shōnen manga écrit et dessiné par Yoshihiro Togashi. Il est pré-publié depuis mars 1998 dans l'hebdomadaire Weekly Shōnen Jump de l'éditeur Shūeisha, et a été compilé en trente-six tomes au 4 octobre 2018. En mai 2013, le manga s'est vendu à plus de 65 millions d'exemplaires au Japon. La version française est publiée aux éditions Kana, et trente-six tomes sont sortis au 3 mai 2019.<br/><br/>
+                  La série a fait l'objet de deux adaptations en anime. La première a été réalisée entre 1999 et 2001, suivie de trois séries d'OAV en 2002, 2003 et 2004. Elle a été éditée en français par Dybex. La seconde, reprenant l'histoire depuis le début, a été diffusée entre octobre 2011 et septembre 2014. La licence pour les principaux pays francophones a été acquise par Kana Home Video pour une sortie en DVD.<br/><br/>                
+                  Un film d'animation nommé Hunter × Hunter : Phantom Rouge est également sorti le 12 janvier 2013 au Japon. Un second film d'animation nommé Hunter × Hunter : The Last Mission est sorti le 27 décembre 2013 au Japon.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
       </div>
     </main>
   </body>
