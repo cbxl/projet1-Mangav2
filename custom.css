@@ -1,4 +1,10 @@
 /* général */
+
+/* title */
+h1 {
+    font-family: 'Bangers', cursive;
+    text-align: center;
+}
 h2{
     text-align: center;
 }
@@ -79,6 +85,58 @@ p{
     max-height: 179px;     
     margin-bottom: 0.8em;
 }
+
+/* manga card */
+
+.classement {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mangaCard {
+    width: 100%;
+    max-width: 740px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+
+
+.mangaBadge {
+    display: grid;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.mangaCardImage {
+    margin: 10px;
+}
+
+.mangaCardTitle {
+    font-family: 'Bangers', cursive;
+    text-align: center;
+}
+
+.mangaCardList {
+    padding: 0px;
+}
+
+.mangaCardText {
+    padding-top: 10px;
+}
+
+.mangaDetailButton {
+}
+
+
+/* image */
+.mangaHeadImage {
+    width: 100%;
+    max-width: 1700px;
+}
+
+
+
 
 /* footer */
 .listeFooter {
