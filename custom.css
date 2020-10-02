@@ -415,7 +415,34 @@ p{
 
 }
 
-/* footer */
-.listeFooter {
-    list-style: none;
+/* caroussel */
+
+
+
+/* Page Personnage */
+
+.titleperso {
+    text-align: center;
+    font-size: 5em;
 }
+.txtcenter {
+    text-align: center;
+}
+
+.pic1  {
+    margin: 5px;
+    width: 18rem;
+    
+  
+}
+div.pic1:hover {
+ 
+   
+    box-shadow: 0 9px 46px 8px rgba(255, 217, 5, 0.14), 0 11px 15px -7px rgba(241, 206, 7, 0.12), 0 24px 38px 3px rgba(255, 238, 0, 0.2);
+}
+.card-img-top{
+    height: 400px;
+}
+
+
+
