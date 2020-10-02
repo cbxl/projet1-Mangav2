@@ -11,15 +11,15 @@
 
 /* Page Personnage */
 
-h2 {
+.titleperso {
     text-align: center;
     font-size: 5em;
 }
-.row {
+.txtcenter {
     text-align: center;
 }
 
-.card  {
+.pic1  {
     margin: 5px;
     width: 18rem;
     
