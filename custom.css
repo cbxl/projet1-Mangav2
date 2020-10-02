@@ -10,11 +10,62 @@
 
 
 
-/* card */
+/* manga card */
+
+.mangaTitle {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.classement{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mangaCard{
+    width : 100%;
+    max-width: 740px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.shadow{
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+
+.mangaBadge {
+    display : grid;
+    font-size: 15px;
+}
+
+.mangaCardTitle {
+    font-family: 'Bangers', cursive;
+    text-align : center;
+}
+
+.mangaCardList {
+    padding : 0px; 
+}
+
+.mangaListGroupItem {
+    padding-left: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.mangaCardText{
+    padding-top: 10px;
+}
+
 
 
 /* image */
-.manga-head-img {
+.mangaHeadImage {
     width: 100%;
     max-width: 1700px;
+}
+
+/* title */
+h1 {
+    font-family: 'Bangers', cursive;
+    text-align: center;
 }
