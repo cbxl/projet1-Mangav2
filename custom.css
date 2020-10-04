@@ -16,7 +16,7 @@
 /* title */
 
 h1 {
-    font-family: 'Bangers', cursive;
+    /* font-family: 'Bangers', cursive; */
     text-align: center;
 }
 
@@ -141,8 +141,6 @@ p{
     padding-top: 10px;
 }
 
-.mangaDetailButton {
-}
 
 
 /* image */
@@ -413,7 +411,7 @@ p{
 }
 
 
-}
+
 
 /* caroussel */
 
