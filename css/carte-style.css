@@ -54,12 +54,13 @@ a{
 .details p{
 	font-family: calibri;
 	font-weight: bold;
-	color:#6a6a74;
+	color:#b3b3b3;
 	text-align: center;
 	margin-top: 20px;
 }
 .marvel{
-	color:#32323e;
+	padding-top: 20px;
+	color:#ffc107;
 	font-weight: bold;
 	letter-spacing: 2px;
 	font-family: bebas kai;
@@ -74,10 +75,10 @@ a{
 	transform: scale(1.02);
 	transition: all ease 0.3s;
 }
-.box:hover .marvel{
+/* .box:hover .marvel{
 	color:#c0292b;
 	transition: all ease 0.5s;
-}
+} */
 /*--responsive for mobile phone--*/
 @media(max-width:720px){
 	.box{
