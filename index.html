@@ -19,14 +19,18 @@
     <!-- carte style --------------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="custom.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&amp;display=swap" rel="stylesheet">
+    <!-- homepage style -------------------------->
+    <link rel="stylesheet" href="css/custom-homepage.css" />
+
     <title>Fan de Manga</title>
 
 
 </head>
 <body class="homepage">
-    <!--COLINE-->
-
+    
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
@@ -133,25 +137,22 @@
             <img src="https://img.20mn.fr/hhmwgsvwT7CTr6vyE7QEAA/768x492_couverture-tome-62-one-piece.jpg"
                  class="img-fluid"
                  alt="One Piece, manga n1">
-
         </div>
         <!-- fin caroussel et image en mobile-->
         <!-- histoire du manga -->
 
+        <section class="historique">
+            <h1 class="pt-5 pb-2 font-manga text-center">Bienvenue à tous les fans de mangas</h1>
+            <article class="histoire">
+                <p class="sous-titre pb-5">Retrouvez tout l'univers du manga sur notre site : actus, évènements, forums...</p>
 
-        <h1 class="pt-5 pb-2 homepage">Bienvenue à tous les fans de mangas</h1>
-        <article class="histoire">
-            <p class="sous-titre pb-5">Retrouvez tout l'univers du manga sur notre site : actus, évènements, forums...</p>
-
-
-            <section class="historique">
-                <h2 class="homepage pt-5">L'histoire du manga</h2>
+                <h2 class="font-manga pt-5 text-center">L'histoire du manga</h2>
 
                 <div class="container pt-3">
-                    <div class="card mr 0.8em">
-                        <div class="card-body shadow-homepage">
+                    <div class="card mr 0.8em homepageCard">
+                        <div class="card-body shadow-homepage homepageCard">
                             <aside>
-                                <h3 class="card-title mb-3 homepage text-left">Le commencement</h3>
+                                <h3 class="card-title mb-3 font-manga text-left">Le commencement</h3>
                                 <div class="row">
                                     <div class="col-md-4 mr-auto">
                                         <img src="https://toulousemanga.fr/wp-content/uploads/2012/06/028826_0320.jpg"
@@ -171,10 +172,10 @@
 
                     <div class="row py-5">
                         <div class="col-md-6">
-                            <div class="card text-center">
-                                <div class="card-body shadow-homepage">
+                            <div class="card text-center homepageCard">
+                                <div class="card-body shadow-homepage homepageCard">
                                     <aside>
-                                        <h3 class="card-title mb-3 homepage">Le manga au Japon</h3>
+                                        <h3 class="card-title mb-3 font-manga">Le manga au Japon</h3>
                                         <div class="container-image">
                                             <img src="https://www.leparisien.fr/resizer/eh6j00Za5hQPGrAvvxAXkwX71bQ=/932x582/arc-anglerfish-eu-central-1-prod-leparisien.s3.amazonaws.com/public/RNMEVFZ6OXFQPC6IUT4DZTPNKE.jpg"
                                                  class="imageLibrairie"
@@ -201,10 +202,10 @@
                         </div>
 
                         <div class="col-md-6">
-                            <div class="card text-center">
-                                <div class="card-body shadow-homepage">
+                            <div class="card text-center homepageCard">
+                                <div class="card-body shadow-homepage homepageCard">
                                     <aside>
-                                        <h3 class="card-title mb-3 homepage">Le manga en France</h3>
+                                        <h3 class="card-title mb-3 font-manga">Le manga en France</h3>
                                         <div class="container-image">
                                             <img src="https://www.journaldujapon.com/wp-content/uploads/2013/06/cityhall3.png"
                                                  class="imageFrance"
@@ -230,13 +231,13 @@
                         </div>
                     </div>
                 </div>
-            </section>
+        </section>
         </article>
 
         <!-- fin histoire du manga -->
         <!-- top 10 manga -->
 
-        <div class="container-fluid carte-manga-top10">
+        <div class="container-fluid carte-manga-top10 pt-5">
             <h1 class="titre-slider font-manga blanc">TOP 10 MANGAS</h1>
             <!--slider------------------->
             <ul id="autoWidth" class="cs-hidden">
@@ -246,8 +247,8 @@
                     <div class="box">
                         <p class="marvel"><span class="badge badge-pill badge-warning-homepage mangaBadge p-2">N°1 : One Piece</span></p>
                         <!--model-->
-                       <a href="top-10-manga.html">
-                           <img src="https://media.senscritique.com/media/000015702798/source_big/One_Piece.jpg" class="model">
+                        <a href="top-10-manga.html">
+                            <img src="https://media.senscritique.com/media/000015702798/source_big/One_Piece.jpg" class="model">
                         </a>
                         <!--details-->
                         <div class="details">
@@ -267,12 +268,12 @@
                                  class="model"
                                  alt="Illustration du manga Dragon Ball">
                         </a>
-                            <!--details-->
-                            <div class="details">
+                        <!--details-->
+                        <div class="details">
 
-                            </div>
+                        </div>
 
-</div>
+                    </div>
                 </li>
                 <!--3------------------------------>
                 <li class="item-a">
@@ -285,12 +286,12 @@
                                  class="model"
                                  alt="Illustration du manga Death Note">
                         </a>
-                            <!--details-->
-                            <div class="details">
+                        <!--details-->
+                        <div class="details">
 
-                            </div>
+                        </div>
 
-</div>
+                    </div>
                 </li>
                 <!--4------------------------------>
                 <li class="item-a">
@@ -303,12 +304,12 @@
                                  class="model"
                                  alt="Illustration du manga Fullmetal Alchemist">
                         </a>
-                            <!--details-->
-                            <div class="details">
+                        <!--details-->
+                        <div class="details">
 
-                            </div>
+                        </div>
 
-</div>
+                    </div>
                 </li>
                 <!--5------------------------------>
                 <li class="item-a">
@@ -321,12 +322,12 @@
                                  class="model"
                                  alt="Illustration du manga Berserk">
                         </a>
-                            <!--details-->
-                            <div class="details">
+                        <!--details-->
+                        <div class="details">
 
-                            </div>
+                        </div>
 
-</div>
+                    </div>
                 </li>
                 <!--6------------------------------>
                 <li class="item-a">
@@ -339,12 +340,12 @@
                                  class="model"
                                  alt="Illustration du manga Naruto">
                         </a>
-                            <!--details-->
-                            <div class="details">
+                        <!--details-->
+                        <div class="details">
 
-                            </div>
+                        </div>
 
-</div>
+                    </div>
                 </li>
                 <!--7------------------------------>
                 <li class="item-a">
@@ -357,12 +358,12 @@
                                  class="model"
                                  alt="Illustration du manga Akira">
                         </a>
-                            <!--details-->
-                            <div class="details">
+                        <!--details-->
+                        <div class="details">
 
-                            </div>
+                        </div>
 
-</div>
+                    </div>
                 </li>
                 <!--8------------------------------>
                 <li class="item-a">
@@ -375,12 +376,12 @@
                                  class="model"
                                  alt="Illustration du manga GTO">
                         </a>
-                            <!--details-->
-                            <div class="details">
+                        <!--details-->
+                        <div class="details">
 
-                            </div>
+                        </div>
 
-</div>
+                    </div>
                 </li>
                 <!--9------------------------------>
                 <li class="item-a">
@@ -396,261 +397,151 @@
                         <!--details-->
                         <div class="details">
 
-                     </div>
+                        </div>
 
-</div>
+                    </div>
                 </li>
                 <!--10------------------------------>
                 <li class="item-a">
-                    
+
                     <!--slider-box-->
                     <div class="box">
                         <p class="marvel"><span class="badge badge-pill badge-warning-homepage mangaBadge p-2">N°10 : Hunter X Hunter</span></p>
                         <!--model-->
                         <a href="top-10-manga.html">
                             <img src=https://media.senscritique.com/media/000015537294/source_big/Hunter_X_Hunter.jpg
-                                    class="model"
-                                    alt="Illustration du manga Hunter X Hunter">
-                        </a>
-                            <!--details-->
-                        <div class="details">
-
-                        </div>
-                </li>
-            </ul>
-            
-        </div>
-
-        <!-- Fin top 10 manga -->
-
-        <!-- top 10 personnage -->
-
-        <div class="container-fluid carte-manga-top10">
-            <h1 class="titre-slider font-manga blanc">TOP 10 PERSONNAGES</h1>
-            
-            <!--slider------------------->
-            <ul id="autoWidthx" class="cs-hidden">
-                <!--1------------------------------>
-                <li class="item-a">
-                    <!--slider-box-->
-                    <div class="box">
-                        <p class="marvel">#1 Nami</p>
-                        <!--model-->
-                        <a href="top-10-perso.html">
-                            <img src="https://vignette.wikia.nocookie.net/onepiece/images/2/27/Nami_Anime_Post_Ellipse_Infobox.png/revision/latest/scale-to-width-down/340?cb=20181021130911&path-prefix=fr"
-                                 class="model" alt="nami">
-                        </a>
-
-                            <!--details-->
-                            <div class="details">
-
-                            </div>
-
-</div>
-                </li>
-                <!--2------------------------------>
-                <li class="item-a">
-                    <!--slider-box-->
-                    <div class="box">
-                        <p class="marvel">>#2 Kirua Zoldik</p>
-                        <!--model-->
-                        <a href="top-10-perso.html">
-                            <img src="https://i.pinimg.com/originals/fd/8f/31/fd8f3184e701f9d66df1229c07d16610.jpg"
                                  class="model"
-                                 alt="Illustration Kirua">
-                        </a>
-                            <!--details-->
-                            <div class="details">
-
-                            </div>
-
-</div>
-                </li>
-                <!--3------------------------------>
-                <li class="item-a">
-                    <!--slider-box-->
-                    <div class="box">
-                        <p class="marvel">#3 Kakashi Atak</p>
-                        <!--model-->
-                        <a href="top-10-perso.html">
-                            <img src=https://i.pinimg.com/originals/67/aa/55/67aa557b09a2d43fce34aa8153a0b612.jpg
-                                 class="model"
-                                 alt="Kakashi Atak">
-                        </a>
-                            <!--details-->
-                            <div class="details">
-
-                            </div>
-
-</div>
-                </li>
-                <!--4------------------------------>
-                <li class="item-a">
-                    <!--slider-box-->
-                    <div class="box">
-                        <p class="marvel">#4 Hisoka muro</p>
-                        <!--model-->
-                        <a href="top-10-perso.html">
-                            <img src=https://i.pinimg.com/originals/08/d7/f6/08d7f611f248b1ccbdfaaa002a7f774b.jpg
-                                 class="model"
-                                 alt="Illustration Hisoka muro">
-                        </a>
-                            <!--details-->
-                            <div class="details">
-
-                            </div>
-
-</div>
-                </li>
-                <!--5------------------------------>
-                <li class="item-a">
-                    <!--slider-box-->
-                    <div class="box">
-                        <p class="marvel">#5 Erza scarlett</p>
-                        <!--model-->
-                        <a href="top-10-perso.html">
-                            <img src=https://i.pinimg.com/originals/6f/19/4b/6f194b8c6b674c6adbb8176122853a79.jpg
-                                 class="model"
-                                 alt="Illustration Erza scarlett">
-                        </a>
-                            <!--details-->
-                            <div class="details">
-
-                            </div>
-
-</div>
-                </li>
-                <!--6------------------------------>
-                <li class="item-a">
-                    <!--slider-box-->
-                    <div class="box">
-                        <p class="marvel">#6 Saitama</p>
-                        <!--model-->
-                        <a href="top-10-perso.html">
-                            <img src="https://static.wikia.nocookie.net/animemanga-encyclopedie/images/7/7e/SAITAMA.jpg/revision/latest?cb=20170128152550&path-prefix=fr"
-                                 class="model"
-                                 alt="Illustration Saitama">
-                        </a>
-                            <!--details-->
-                            <div class="details">
-
-                            </div>
-
-</div>
-                </li>
-                <!--7------------------------------>
-                <li class="item-a">
-                    <!--slider-box-->
-                    <div class="box">
-                        <p class="marvel">#7 Songohan</p>
-                        <!--model-->
-                        <a href="top-10-perso.html">
-                            <img src=https://i.pinimg.com/originals/2b/50/22/2b502282faf8ee5ce20ae3b814a5991d.jpg
-                                 class="model"
-                                 alt="Illustration Songohan">
-                        </a>
-                            <!--details-->
-                            <div class="details">
-
-                            </div>
-
-</div>
-                </li>
-                <!--8------------------------------>
-                <li class="item-a">
-                    <!--slider-box-->
-                    <div class="box">
-                        <p class="marvel">#8 Kuroko</p>
-                        <!--model-->
-                        <a href="top-10-perso.html">
-                            <img src"https: //vignette.wikia.nocookie.net/kurokosbasket/images/1/1b/Kuroko_subbed_back_in.png/revision/latest?cb =20150816141552&path-prefix =fr"
-                                 class="model"
-                                 alt="Illustration Kuroko">
-                            </a>
-                            <!--details-->
-                            <div class="details">
-
-                            </div>
-
-</div>
-                </li>
-                <!--9------------------------------>
-                <li class="item-a">
-                    <!--slider-box-->
-                    <div class="box">
-                        <p class="marvel">#9 Nicky personne</p>
-                        <!--model-->
-                        <a href="top-10-perso.html">
-                            <img src="https://i.pinimg.com/originals/8b/71/89/8b71899662e26ecfc8113d6106633f94.jpg"
-                                 class="model"
-                                 alt="Illustration Nicky personne">
-                        </a>
-                            <!--details-->
-                            <div class="details">
-
-                            </div>
-
-</div>
-                </li>
-                <!--10------------------------------>
-                <li class="item-a">
-                    <!--slider-box-->
-                    <div class="box">
-                        <p class="marvel">#10 Onizuka</p>
-                        <!--model-->
-                        <a href="top-10-perso.html">
-                            <img src=https://4.bp.blogspot.com/_KBCzBwWQboM/THwngPfhiMI/AAAAAAAAAAM/yGaBmozoR74/s1600/largeAnimePaperscans_GreatTeacherOnizuka_valkorn_92928.jpg
-                                 class="model"
-                                 alt="Illustration Onizuka">
-                        </a>
-                            <!--details-->
-                            <div class="details">
-
-                            </div>
-
-</div>
-                </li>
-                <!--11------------------------------>
-                <li class="item-a">
-                    <!--slider-box-->
-                    <div class="box">
-                        <p class="marvel">#11 The fullmetal</p>
-                        <!--model-->
-                        <a href="top-10-perso.html">
-                            <img src="https://i.pinimg.com/originals/4c/86/d3/4c86d3b4eede2718f2dbfcea0a82175b.jpg"
-                                 class="model"
-                                 alt="Illustration The fullmetal">
-                        </a>
-                            <!--details-->
-                            <div class="details">
-
-                            </div>
-
-</div>
-                </li>
-                <!--12------------------------------>
-                <li class="item-a">
-                    <!--slider-box-->
-                    <div class="box">
-                        <p class="marvel">#12 Lucina HDXD</p>
-                        <!--model-->
-                        <a href="top-10-perso.html">
-                        <img src="https://vignette.wikia.nocookie.net/raven-azunoctuli-world/images/d/d6/Rias_Gremory.jpg/revision/latest?cb=20170322170008&path-prefix=fr"
-                             class="model"
-                             alt="Illustration Lucina HDXD">
+                                 alt="Illustration du manga Hunter X Hunter">
                         </a>
                         <!--details-->
                         <div class="details">
 
                         </div>
-
-                    </div>
                 </li>
             </ul>
-                        
+
         </div>
 
+        <!-- Fin top 10 manga -->
+        <!-- top 10 personnage -->
 
+        <div class="container-fluid carte-perso-top10 pt-5">
+            <h1 class="titre-slider font-manga">TOP 10 PERSONNAGES</h1>
+
+            <!--slider------------------->
+            <ul id="autoWidthx" class="cs-hidden">
+                <!--1------------------------------>
+                <li class="item-a">
+                    <!--slider-box-->
+                    <a href="top-10-perso.html">
+                        <div class="box perso1">
+                            <p class="marvel persoTitre text-center">#1 Nami</p>
+                        </div>
+                    </a>
+                </li>
+                
+                <!--2------------------------------>
+                <li class="item-a">
+                    <!--slider-box-->
+                    <a href="top-10-perso.html">
+                        <div class="box perso2">
+                            <p class="marvel persoTitre text-center">#2 Kirua Zoldik</p>
+                        </div>
+                    </a>
+                </li>
+                <!--3------------------------------>
+                <li class="item-a">
+                    <!--slider-box-->
+                    <a href="top-10-perso.html">
+                        <div class="box perso3">
+                            <p class="marvel persoTitre text-center">#3 Kakashi Atak</p>
+                        </div>
+                    </a>
+                </li>
+                <!--4------------------------------>
+                <li class="item-a">
+                    <!--slider-box-->
+                    <a href="top-10-perso.html">
+                        <div class="box perso4">
+                            <p class="marvel persoTitre text-center">#4 Hisoka muro</p>
+                        </div>
+                    </a>
+                </li>
+                <!--5------------------------------>
+                <li class="item-a">
+                    <!--slider-box-->
+                    <a href="top-10-perso.html">
+                        <div class="box perso5">
+                            <p class="marvel persoTitre text-center">#5 Erza scarlett</p>
+                        </div>
+                    </a>
+                </li>
+                <!--6------------------------------>
+                <li class="item-a">
+                    <!--slider-box-->
+                    <a href="top-10-perso.html">
+                        <div class="box perso6">
+                            <p class="marvel persoTitre text-center">#6 Saitama</p>
+                        </div>
+                     </a>
+                </li>
+                <!--7------------------------------>
+                <li class="item-a">
+                    <!--slider-box-->
+                    <a href="top-10-perso.html">
+                        <div class="box perso7">
+                            <p class="marvel persoTitre text-center">#7 Songohan</p>
+                        </div>
+                    </a>
+                </li>
+                <!--8------------------------------>
+                <li class="item-a">
+                    <!--slider-box-->
+                    <a href="top-10-perso.html">
+                        <div class="box perso8">
+                            <p class="marvel persoTitre text-center">#8 Kuroko</p>
+                        </div>
+                    </a>
+                </li>
+                <!--9------------------------------>
+                <li class="item-a">
+                    <!--slider-box-->
+                    <a href="top-10-perso.html">
+                        <div class="box perso9">
+                            <p class="marvel persoTitre text-center">#9 Nicky personne</p>
+                        </div>
+                    </a>
+                </li>
+                <!--10------------------------------>
+                <li class="item-a">
+                    <!--slider-box-->
+                    <a href="top-10-perso.html">
+                        <div class="box perso10">
+                            <p class="marvel persoTitre text-center">#10 Onizuka</p>
+                        </div>
+                     </a>
+                </li>
+                <!--11------------------------------>
+                <li class="item-a">
+                    <!--slider-box-->
+                    <a href="top-10-perso.html">
+                        <div class="box perso11">
+                            <p class="marvel persoTitre text-center">#11 The fullmetal</p>
+                        </div>
+                    </a>
+                </li>
+                <!--12------------------------------>
+                <li class="item-a">
+                    <!--slider-box-->
+                    <a href="top-10-perso.html">
+                        <div class="box perso12">
+                            <p class="marvel persoTitre text-center">#12 Lucina HDXD</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
 
     </main>
 
