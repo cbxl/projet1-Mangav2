@@ -7,23 +7,27 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="custom.css">
-    <title>Fan de Manga</title>
+    <link rel="stylesheet" href="customNavFooter.css">
+    <link rel="stylesheet" href="customTop10Manga.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
-
+    <!-- Ajout CSS Sophie -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 
+    <title>Fan de Manga</title>
+  
     
 </head>
 <body class = "top10manga">
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light navColor">
         <div class="container"> 
   
           <!-- Brand -->
           <a class="navbar-brand" href="./index.html">
-            <img src="https://i.pinimg.com/236x/61/7d/b4/617db4ff458d6183719808ba5f5729b4--naruto-tattoo-anime-tattoos.jpg" class="navbar-brand-img" alt="logo de Fand de mangas">
+            <img src=img/Manga_LogoV3.png class="navbar-brand-img" alt="logo de Fand de mangas">
           </a>
   
           <!-- Toggler -->
@@ -44,24 +48,24 @@
 
                 <li class="nav-item ">
                     <a class="nav-link"  href="index.html">
-                      Home
+                      Accueil
                     </a>
                 </li>
                 <li class="nav-item ">
 
-                    <a class="nav-link"  href="top-10-manga.html">
+                    <a class="nav-link activePage"  href="top-10-manga.html">
 
-                      Top 10 Manga
+                      TOP 10 Mangas
                     </a>
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link"  href="top-10-perso.html">
-                      Top 10 Perso
+                      TOP 10 Personnages
                     </a>
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link"  href="evenement.html">
-                      Evenement
+                      Evénements
                     </a>
                 </li>
                 <li class="nav-item ">
@@ -104,21 +108,21 @@
             <span class="badge badge-pill badge-warning mangaBadge col-md-12">N°1</span>
             <img 
               src=https://media.senscritique.com/media/000015702798/source_big/One_Piece.jpg
-              class="card-img-top shadow mangaCardImage"
+              class="card-img-top mangaCardImage"
               alt="Illustration du manga One Piece">
           </div>
           <!-- Espace pris par la colonne corps de la carte -->
           <div class="col-md-8">
-            <div class="card-body">
-              <h3 class="card-title mangaCardTitle">N°1 : One Piece</h3>
+            <div class="card-body mangaCardBody">
+              <h2 class="card-title mangaCardTitle">One Piece</h2>
               <div class="mangaCardList">
-                <ul class="mangaCardListDetails list-group list-group-flush">
-                  <li class="list-group-item mangaListGroupItem">Auteur(s) : Eiichiro Oda</li>
-                  <li class="list-group-item mangaListGroupItem">Dessinateur(s) : Eiichiro Oda</li>
-                  <li class="list-group-item mangaListGroupItem">Titre original : Wan Pīsu</li>
-                  <li class="list-group-item mangaListGroupItem">Langue d'origine : Japonais</li>
-                  <li class="list-group-item mangaListGroupItem">Date de sortie dans le pays d'origine : 22 juillet 1997</li>
-                  <li class="list-group-item mangaListGroupItem">Date de sortie en France : 20 septembre 2000</li>
+                <ul class="mangaCardListDetails">
+                  <li class="mangaListGroupItem">Auteur(s) : Eiichiro Oda</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Dessinateur(s) : Eiichiro Oda</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Titre original : Wan Pīsu</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Langue d'origine : Japonais</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Date de sortie dans le pays d'origine : 22 juillet 1997</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Date de sortie en France : 20 septembre 2000</li><hr class="mangaItemEnd"/>
                 </ul>
               </div>
             </div>
@@ -129,8 +133,8 @@
         </div>
           
         <!-- Button trigger modal -->
-        <div class="d-flex flex-row-reverse bd-highlight">
-          <div class="p-2 bd-highlight">
+        <div class="d-flex flex-row-reverse bd-highlight mangaCardModal">
+          <div class="bd-highlight">
             <button type="button" class="btn btn-primary mangaDetailButton" data-toggle="modal" data-target="#exampleModalLong1">Détails</button>
           </div>
         </div>
@@ -165,20 +169,20 @@
             <span class="badge badge-pill badge-warning mangaBadge col-md-12">N°2</span>
             <img
               src = https://media.senscritique.com/media/000019266699/source_big/Dragon_Ball.png
-              class="card-img-top shadow mangaCardImage"
+              class="card-img-top mangaCardImage"
               alt = "Illustration du manga Dragon Ball">
           </div>
           <div class="col-md-8">
-            <div class="card-body">
-              <h3 class="card-title mangaCardTitle">N°2 : Dragon Ball</h3>
+            <div class="card-body mangaCardBody">
+              <h2 class="card-title mangaCardTitle">Dragon Ball</h2>
               <div class="mangaCardList">
-                <ul class="mangaCardListDetails list-group list-group-flush">
-                  <li class="list-group-item mangaListGroupItem">Auteur(s) : Akira Toriyama</li>
-                  <li class="list-group-item mangaListGroupItem">Dessinateur(s) : Akira Toriyama</li>
-                  <li class="list-group-item mangaListGroupItem">Titre original : Doragon Bōru</li>
-                  <li class="list-group-item mangaListGroupItem">Langue d'origine : Japonais</li>
-                  <li class="list-group-item mangaListGroupItem">Date de sortie dans le pays d'origine : 20 novembre 1984</li>
-                  <li class="list-group-item mangaListGroupItem">Date de sortie en France : 20 novembre 1984</li>
+                <ul class="mangaCardListDetails">
+                  <li class="mangaListGroupItem">Auteur(s) : Akira Toriyama</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Dessinateur(s) : Akira Toriyama</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Titre original : Doragon Bōru</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Langue d'origine : Japonais</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Date de sortie dans le pays d'origine : 20 novembre 1984</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Date de sortie en France : 20 novembre 1984</li><hr class="mangaItemEnd"/>
                 </ul>
               </div>
             </div>
@@ -189,8 +193,8 @@
         </div>
 
         <!-- Button trigger modal -->
-        <div class="d-flex flex-row-reverse bd-highlight">
-          <div class="p-2 bd-highlight">
+        <div class="d-flex flex-row-reverse bd-highlight mangaCardModal">
+          <div class="bd-highlight">
            <button type="button" class="btn btn-primary mangaDetailButton" data-toggle="modal" data-target="#exampleModalLong2">Détails</button>
           </div>
         </div>
@@ -227,20 +231,20 @@
             <span class="badge badge-pill badge-warning mangaBadge col-md-12">N°3</span>
             <img
               src = https://www.manga-news.com/public/images/series/death_note_01.jpg
-              class="card-img-top shadow mangaCardImage"
+              class="card-img-top mangaCardImage"
               alt = "Illustration du manga Death Note">
           </div>
           <div class="col-md-8">
-            <div class="card-body">
-              <h3 class="card-title mangaCardTitle">N°3 : Death Note</h3>
+            <div class="card-body mangaCardBody">
+              <h2 class="card-title mangaCardTitle">Death Note</h2>
               <div class="mangaCardList">
-                <ul class="mangaCardListDetails list-group list-group-flush">
-                  <li class="list-group-item mangaListGroupItem">Auteur(s) : Tsugumi Ōba</li>
-                  <li class="list-group-item mangaListGroupItem">Dessinateur(s) : Takeshi Obata</li>
-                  <li class="list-group-item mangaListGroupItem">Titre original : Desu Nōto</li>
-                  <li class="list-group-item mangaListGroupItem">Langue d'origine : Japonais</li>
-                  <li class="list-group-item mangaListGroupItem">Date de sortie dans le pays d'origine : Décembre 2003</li>
-                  <li class="list-group-item mangaListGroupItem">Date de sortie en France : Janvier 2007 </li>
+                <ul class="mangaCardListDetails">
+                  <li class="mangaListGroupItem">Auteur(s) : Tsugumi Ōba</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Dessinateur(s) : Takeshi Obata</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Titre original : Desu Nōto</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Langue d'origine : Japonais</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Date de sortie dans le pays d'origine : Décembre 2003</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Date de sortie en France : Janvier 2007 </li><hr class="mangaItemEnd"/>
                 </ul>
               </div>
             </div>
@@ -251,8 +255,8 @@
         </div>
 
         <!-- Button trigger modal -->
-        <div class="d-flex flex-row-reverse bd-highlight">
-          <div class="p-2 bd-highlight">
+        <div class="d-flex flex-row-reverse bd-highlight mangaCardModal">
+          <div class="bd-highlight">
             <button type="button" class="btn btn-primary mangaDetailButton" data-toggle="modal" data-target="#exampleModalLong3">Détails</button>
           </div>
         </div>
@@ -286,20 +290,20 @@
             <span class="badge badge-pill badge-warning mangaBadge col-md-12">N°4</span>
             <img
               src = https://media.senscritique.com/media/000019266535/source_big/Fullmetal_Alchemist.jpg
-              class="card-img-top shadow mangaCardImage"
+              class="card-img-top mangaCardImage"
               alt = "Illustration du manga Fullmetal Alchemist">
           </div>
           <div class="col-md-8">
-            <div class="card-body">
-              <h3 class="card-title mangaCardTitle">N°4 : Fullmetal Alchemist</h3>
+            <div class="card-body mangaCardBody">
+              <h2 class="card-title mangaCardTitle">Fullmetal Alchemist</h2>
               <div class="mangaCardList">
-                <ul class="mangaCardListDetails list-group list-group-flush">
-                  <li class="list-group-item mangaListGroupItem">Auteur(s) : Hiromu Arakawa</li>
-                  <li class="list-group-item mangaListGroupItem">Dessinateur(s) : Hiromu Arakawa</li>
-                  <li class="list-group-item mangaListGroupItem">Titre original : Hagane no Renkinjutsushi</li>
-                  <li class="list-group-item mangaListGroupItem">Langue d'origine : Japonais</li>
-                  <li class="list-group-item mangaListGroupItem">Date de sortie dans le pays d'origine : 12 juillet 2001</li>
-                  <li class="list-group-item mangaListGroupItem">Date de sortie en France : 8 septembre 2005</li>
+                <ul class="mangaCardListDetails">
+                  <li class="mangaListGroupItem">Auteur(s) : Hiromu Arakawa</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Dessinateur(s) : Hiromu Arakawa</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Titre original : Hagane no Renkinjutsushi</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Langue d'origine : Japonais</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Date de sortie dans le pays d'origine : 12 juillet 2001</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Date de sortie en France : 8 septembre 2005</li><hr class="mangaItemEnd"/>
                 </ul>
               </div>
             </div>
@@ -310,8 +314,8 @@
         </div>
 
         <!-- Button trigger modal -->
-        <div class="d-flex flex-row-reverse bd-highlight">
-          <div class="p-2 bd-highlight">
+        <div class="d-flex flex-row-reverse bd-highlight mangaCardModal">
+          <div class="bd-highlight">
             <button type="button" class="btn btn-primary mangaDetailButton" data-toggle="modal" data-target="#exampleModalLong4">Détails</button>
           </div>
         </div>
@@ -346,20 +350,20 @@
             <span class="badge badge-pill badge-warning mangaBadge col-md-12">N°5</span>
             <img
               src = https://media.senscritique.com/media/000018276088/source_big/Berserk.jpg
-              class="card-img-top shadow mangaCardImage"
+              class="card-img-top mangaCardImage"
               alt = "Illustration du manga Berserk">
           </div>
           <div class="col-md-8">
-            <div class="card-body">
-              <h3 class="card-title mangaCardTitle">N°5 : Berserk</h3>
+            <div class="card-body mangaCardBody">
+              <h2 class="card-title mangaCardTitle">Berserk</h2>
               <div class="mangaCardList">
-                <ul class="mangaCardListDetails list-group list-group-flush">
-                  <li class="list-group-item mangaListGroupItem">Auteur(s) : Kentaro Miura</li>
-                  <li class="list-group-item mangaListGroupItem">Dessinateur(s) : Kentaro Miura</li>
-                  <li class="list-group-item mangaListGroupItem">Titre original : Beruseruku</li>
-                  <li class="list-group-item mangaListGroupItem">Langue d'origine : Japonais</li>
-                  <li class="list-group-item mangaListGroupItem">Date de sortie dans le pays d'origine : Octobre 1989</li>
-                  <li class="list-group-item mangaListGroupItem">Date de sortie en France : 26 novembre 1990</li>
+                <ul class="mangaCardListDetails">
+                  <li class="mangaListGroupItem">Auteur(s) : Kentaro Miura</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Dessinateur(s) : Kentaro Miura</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Titre original : Beruseruku</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Langue d'origine : Japonais</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Date de sortie dans le pays d'origine : Octobre 1989</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Date de sortie en France : 26 novembre 1990</li><hr class="mangaItemEnd"/>
                 </ul>
               </div>
             </div>
@@ -370,8 +374,8 @@
         </div>
 
         <!-- Button trigger modal -->
-        <div class="d-flex flex-row-reverse bd-highlight">
-          <div class="p-2 bd-highlight">
+        <div class="d-flex flex-row-reverse bd-highlight mangaCardModal">
+          <div class="bd-highlight">
             <button type="button" class="btn btn-primary mangaDetailButton" data-toggle="modal" data-target="#exampleModalLong5">Détails</button>
           </div>
         </div>
@@ -405,20 +409,20 @@
             <span class="badge badge-pill badge-warning mangaBadge col-md-12">N°6</span>
             <img
               src = https://media.senscritique.com/media/000015536243/source_big/Naruto.jpg
-              class="card-img-top shadow mangaCardImage"
+              class="card-img-top mangaCardImage"
               alt = "Illustration du manga Naruto">
           </div>
           <div class="col-md-8">
-            <div class="card-body">
-              <h3 class="card-title mangaCardTitle">N°6 : Naruto</h3>
+            <div class="card-body mangaCardBody">
+              <h2 class="card-title mangaCardTitle">Naruto</h2>
               <div class="mangaCardList">
-                <ul class="mangaCardListDetails list-group list-group-flush">
-                  <li class="list-group-item mangaListGroupItem">Auteur(s) : Masashi Kishimoto</li>
-                  <li class="list-group-item mangaListGroupItem">Dessinateur(s) : Masashi Kishimoto</li>
-                  <li class="list-group-item mangaListGroupItem">Titre original : Naruto</li>
-                  <li class="list-group-item mangaListGroupItem">Langue d'origine : Japonais</li>
-                  <li class="list-group-item mangaListGroupItem">Date de sortie dans le pays d'origine : Octobre 1999</li>
-                  <li class="list-group-item mangaListGroupItem">Date de sortie en France : Octobre 1999</li>
+                <ul class="mangaCardListDetails">
+                  <li class="mangaListGroupItem">Auteur(s) : Masashi Kishimoto</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Dessinateur(s) : Masashi Kishimoto</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Titre original : Naruto</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Langue d'origine : Japonais</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Date de sortie dans le pays d'origine : Octobre 1999</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Date de sortie en France : Octobre 1999</li><hr class="mangaItemEnd"/>
                 </ul>
               </div>
             </div>
@@ -429,8 +433,8 @@
         </div>
 
         <!-- Button trigger modal -->
-        <div class="d-flex flex-row-reverse bd-highlight">
-          <div class="p-2 bd-highlight">
+        <div class="d-flex flex-row-reverse bd-highlight mangaCardModal">
+          <div class="bd-highlight">
             <button type="button" class="btn btn-primary mangaDetailButton" data-toggle="modal" data-target="#exampleModalLong6">Détails</button>
           </div>
         </div>
@@ -465,20 +469,20 @@
             <span class="badge badge-pill badge-warning mangaBadge col-md-12">N°7</span>
             <img
               src = https://media.senscritique.com/media/000015332347/source_big/Akira.jpg
-              class="card-img-top shadow mangaCardImage"
+              class="card-img-top mangaCardImage"
               alt = "Illustration du manga Akira">
           </div>
           <div class="col-md-8">
-            <div class="card-body">
-              <h3 class="card-title mangaCardTitle">N°7 : Akira</h3>
+            <div class="card-body mangaCardBody">
+              <h2 class="card-title mangaCardTitle">Akira</h2>
               <div class="mangaCardList">
-                <ul class="mangaCardListDetails list-group list-group-flush">
-                  <li class="list-group-item mangaListGroupItem">Auteur(s) : Katsuhiro Ôtomo</li>
-                  <li class="list-group-item mangaListGroupItem">Dessinateur(s) : Katsuhiro Ôtomo</li>
-                  <li class="list-group-item mangaListGroupItem">Titre original : Akira</li>
-                  <li class="list-group-item mangaListGroupItem">Langue d'origine : Japonais</li>
-                  <li class="list-group-item mangaListGroupItem">Date de sortie dans le pays d'origine : 6 décembre 1982</li>
-                  <li class="list-group-item mangaListGroupItem">Date de sortie en France : 20 décembre 1982</li>
+                <ul class="mangaCardListDetails">
+                  <li class="mangaListGroupItem">Auteur(s) : Katsuhiro Ôtomo</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Dessinateur(s) : Katsuhiro Ôtomo</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Titre original : Akira</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Langue d'origine : Japonais</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Date de sortie dans le pays d'origine : 6 décembre 1982</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Date de sortie en France : 20 décembre 1982</li><hr class="mangaItemEnd"/>
                 </ul>
               </div>
             </div>
@@ -489,8 +493,8 @@
         </div>
 
         <!-- Button trigger modal -->
-        <div class="d-flex flex-row-reverse bd-highlight">
-          <div class="p-2 bd-highlight">
+        <div class="d-flex flex-row-reverse bd-highlight mangaCardModal">
+          <div class="bd-highlight">
             <button type="button" class="btn btn-primary mangaDetailButton" data-toggle="modal" data-target="#exampleModalLong7">Détails</button>
           </div>
         </div>
@@ -527,20 +531,20 @@
             <span class="badge badge-pill badge-warning mangaBadge col-md-12">N°8</span>
             <img
               src = https://media.senscritique.com/media/000018657250/source_big/GTO.png
-              class="card-img-top shadow mangaCardImage"
+              class="card-img-top mangaCardImage"
               alt = "Illustration du manga GTO">
           </div>
           <div class="col-md-8">
-            <div class="card-body">
-              <h3 class="card-title mangaCardTitle">N°8 : GTO</h3>
+            <div class="card-body mangaCardBody">
+              <h2 class="card-title mangaCardTitle">GTO</h2>
               <div class="mangaCardList">
-                <ul class="mangaCardListDetails list-group list-group-flush">
-                  <li class="list-group-item mangaListGroupItem">Auteur(s) : Tôru Fujisawa</li>
-                  <li class="list-group-item mangaListGroupItem">Dessinateur(s) : Tôru Fujisawa</li>
-                  <li class="list-group-item mangaListGroupItem">Titre original : Gurēto Tīchā Onizuka</li>
-                  <li class="list-group-item mangaListGroupItem">Langue d'origine : Japonais</li>
-                  <li class="list-group-item mangaListGroupItem">Date de sortie dans le pays d'origine : 16 mai 1997</li>
-                  <li class="list-group-item mangaListGroupItem">Date de sortie en France : 20 février 2001</li>
+                <ul class="mangaCardListDetails">
+                  <li class="mangaListGroupItem">Auteur(s) : Tôru Fujisawa</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Dessinateur(s) : Tôru Fujisawa</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Titre original : Gurēto Tīchā Onizuka</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Langue d'origine : Japonais</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Date de sortie dans le pays d'origine : 16 mai 1997</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Date de sortie en France : 20 février 2001</li><hr class="mangaItemEnd"/>
                 </ul>
               </div>
             </div>
@@ -551,8 +555,8 @@
         </div>
 
         <!-- Button trigger modal -->
-        <div class="d-flex flex-row-reverse bd-highlight">
-          <div class="p-2 bd-highlight">
+        <div class="d-flex flex-row-reverse bd-highlight mangaCardModal">
+          <div class="bd-highlight">
             <button type="button" class="btn btn-primary mangaDetailButton" data-toggle="modal" data-target="#exampleModalLong8">Détails</button>
           </div>
         </div>
@@ -587,20 +591,20 @@
             <span class="badge badge-pill badge-warning mangaBadge col-md-12">N°9</span>
             <img
               src = https://media.senscritique.com/media/000005870183/source_big/Monster.jpg
-              class="card-img-top shadow mangaCardImage"
+              class="card-img-top mangaCardImage"
               alt = "Illustration du manga Monster">
           </div>
           <div class="col-md-8">
-            <div class="card-body">
-              <h3 class="card-title mangaCardTitle">N°9 : Monster</h3>
+            <div class="card-body mangaCardBody">
+              <h2 class="card-title mangaCardTitle">Monster</h2>
               <div class="mangaCardList">
-                <ul class="mangaCardListDetails list-group list-group-flush">
-                  <li class="list-group-item mangaListGroupItem">Auteur(s) : Naoki Urasawa</li>
-                  <li class="list-group-item mangaListGroupItem">Dessinateur(s) : Naoki Urasawa</li>
-                  <li class="list-group-item mangaListGroupItem">Titre original : Monsutā</li>
-                  <li class="list-group-item mangaListGroupItem">Langue d'origine : Japonais</li>
-                  <li class="list-group-item mangaListGroupItem">Date de sortie dans le pays d'origine : 5 décembre 1994</li>
-                  <li class="list-group-item mangaListGroupItem">Date de sortie en France : 20 octobre 2001</li>
+                <ul class="mangaCardListDetails">
+                  <li class="mangaListGroupItem">Auteur(s) : Naoki Urasawa</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Dessinateur(s) : Naoki Urasawa</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Titre original : Monsutā</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Langue d'origine : Japonais</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Date de sortie dans le pays d'origine : 5 décembre 1994</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Date de sortie en France : 20 octobre 2001</li><hr class="mangaItemEnd"/>
                 </ul>
               </div>
             </div>
@@ -611,8 +615,8 @@
         </div>
 
         <!-- Button trigger modal -->
-        <div class="d-flex flex-row-reverse bd-highlight">
-          <div class="p-2 bd-highlight">
+        <div class="d-flex flex-row-reverse bd-highlight mangaCardModal">
+          <div class="bd-highlight">
             <button type="button" class="btn btn-primary mangaDetailButton" data-toggle="modal" data-target="#exampleModalLong9">Détails</button>
           </div>
         </div>
@@ -647,20 +651,20 @@
             <span class="badge badge-pill badge-warning mangaBadge col-md-12">N°10</span>
             <img
               src = https://media.senscritique.com/media/000015537294/source_big/Hunter_X_Hunter.jpg
-              class="card-img-top shadow mangaCardImage"
+              class="card-img-top mangaCardImage"
               alt = "Illustration du manga Hunter X Hunter">
           </div>
           <div class="col-md-8">
-            <div class="card-body">
-              <h3 class="card-title mangaCardTitle">N°10 : Hunter X Hunter</h3>
+            <div class="card-body mangaCardBody">
+              <h2 class="card-title mangaCardTitle">Hunter X Hunter</h2>
               <div class="mangaCardList">
-                <ul class="mangaCardListDetails list-group list-group-flush">
-                  <li class="list-group-item mangaListGroupItem">Auteur(s) : Yoshihiro Togashi </li>
-                  <li class="list-group-item mangaListGroupItem">Dessinateur(s) : Yoshihiro Togashi</li>
-                  <li class="list-group-item mangaListGroupItem">Titre original : Hantā Hantā</li>
-                  <li class="list-group-item mangaListGroupItem">Langue d'origine : Japonais</li>
-                  <li class="list-group-item mangaListGroupItem">Date de sortie dans le pays d'origine : 3 mars 1998</li>
-                  <li class="list-group-item mangaListGroupItem">Date de sortie en France : 3 mai 2019</li>
+                <ul class="mangaCardListDetails">
+                  <li class="mangaListGroupItem">Auteur(s) : Yoshihiro Togashi </li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Dessinateur(s) : Yoshihiro Togashi</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Titre original : Hantā Hantā</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Langue d'origine : Japonais</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Date de sortie dans le pays d'origine : 3 mars 1998</li><hr class="mangaItemEnd"/>
+                  <li class="mangaListGroupItem">Date de sortie en France : 3 mai 2019</li><hr class="mangaItemEnd"/>
                 </ul>
               </div>
             </div>
@@ -671,8 +675,8 @@
         </div>
 
         <!-- Button trigger modal -->
-        <div class="d-flex flex-row-reverse bd-highlight">
-          <div class="p-2 bd-highlight">
+        <div class="d-flex flex-row-reverse bd-highlight mangaCardModal">
+          <div class="bd-highlight">
             <button type="button" class="btn btn-primary mangaDetailButton" data-toggle="modal" data-target="#exampleModalLong10">Détails</button>
           </div>
         </div>
@@ -705,16 +709,59 @@
   </body>
 
 
-    <footer>
-        <ul>
-            <li>Home</li>
-            <li>Top 10 Mangas</li>
-            <li>Top 10 personnages</li>
-            <li>Les évènements</li>
-            <li>Forum</li>
-            <li>Plan de site</li>
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h6>About</h6>
+        <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Categories</h6>
+        <ul class="footer-links">
+          <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+          <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+          <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+          <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+          <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+          <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
         </ul>
-    </footer>
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="http://scanfcode.com/about/">About Us</a></li>
+          <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+          <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+          <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+     <a href="#">Scanfcode</a>.
+        </p>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <ul class="social-icons">
+          <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+          <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
 
 
    <!-- Optional JavaScript -->
