@@ -1,12 +1,13 @@
-/* général */
+/* gï¿½nï¿½ral */
 .blanc {
     color: #fff;
 }
 
 
 
-/* body  */
-body.evenement {
+
+ /* body  */
+  body.evenement {
     background-color: #FFE53B;
     background-image: linear-gradient(147deg, #FFE53B 0%, #fd3838 74%);
     font-family: 'Fira Sans', sans-serif;
@@ -101,7 +102,6 @@ p.sous-titre {
 
 .btn-homepage {
     background-color: #9C27B0;
-    /*background-image: linear-gradient(147deg, #9C27B0 15%, #E91E63 74%);*/
     padding: 10px 25px;
     border-radius: 50px;
     color: #fff;
@@ -113,10 +113,9 @@ p.sous-titre {
     letter-spacing: 1px;
 }
 
+
 .badge-warning-homepage {
     background-image: linear-gradient(147deg, #FFE53B 15%, #fd3838 74%);
-}
-
 
 
 .imageCommencement {
@@ -134,64 +133,14 @@ p.sous-titre {
     margin-bottom: 0.8em;
 }
 
-/* manga card */
-
-.classement {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.mangaCard {
-    width: 100%;
-    max-width: 740px;
-    border-radius: 10px;
-    padding: 15px;
-}
-
-
-.mangaBadge {
-    display: grid;
-    font-size: 15px;
-    margin-left: 10px;
-}
-
-.mangaCardImage {
-    margin: 10px;
-}
-
-.mangaCardTitle {
-    font-family: 'Bangers', cursive;
-    text-align: center;
-}
-
-.mangaCardList {
-    padding: 0px;
-}
-
-.mangaCardText {
-    padding-top: 10px;
-}
-
-.mangaDetailButton {
-}
 
 
 /* image */
-.mangaHeadImage {
-    width: 100%;
-    max-width: 1700px;
-}
-
-
-
-
 
   @import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
   * {
     box-sizing: border-box;
   }
-
-
 
 
 
@@ -389,63 +338,8 @@ p.sous-titre {
   
 /* fin carte evenement */
 
-/* manga card */
-
-.mangaTitle {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.classement{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.mangaCard{
-    width : 100%;
-    max-width: 740px;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.shadow{
-    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
-}
-
-.mangaBadge {
-    display : grid;
-    font-size: 15px;
-}
-
-.mangaCardTitle {
-    font-family: 'Bangers', cursive;
-    text-align : center;
-}
-
-.mangaCardList {
-    padding : 0px; 
-}
-
-.mangaListGroupItem {
-    padding-left: 20px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-}
-
-.mangaCardText{
-    padding-top: 10px;
-}
-
-
 
 /* image */
-.mangaHeadImage {
-    width: 100%;
-    max-width: 1700px;
-}
-
-
-}
-
 
 
 
@@ -470,7 +364,7 @@ div.pic1:hover {
    
     box-shadow: 0 9px 46px 8px rgba(255, 217, 5, 0.14), 0 11px 15px -7px rgba(241, 206, 7, 0.12), 0 24px 38px 3px rgba(255, 238, 0, 0.2);
 }
-.card-img-top{
+.persoCardImage{
     height: 400px;
 }
 
