@@ -149,6 +149,14 @@
 /* End of Gallery*/
 
 /* slider actions */
+
+@media screen and (max-width:780px) {
+    .lSAction > a {
+        display: none !important;
+    }
+    
+}
+
 .lSAction > a {
     width: 32px;
     display: block;
@@ -162,7 +170,7 @@
     opacity: 0.5;
     -webkit-transition: opacity 0.35s linear 0s;
     transition: opacity 0.35s linear 0s;
-}
+    }
 .lSAction > a:hover {
     opacity: 1;
 }
