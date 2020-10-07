@@ -70,9 +70,6 @@ function ok() {
             $('.connect').hide();
             $('.inscrip-event').show();
             $('.inscrip-event').text("inscription a l'événement");
-            function okz(){
-                alert("tu es inscrit a l'événement")
-            }
             
 			return
         }
