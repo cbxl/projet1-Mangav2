@@ -84,7 +84,7 @@
   
             <!-- Button -->
             <a href="#" id="modalActivate" type="button" class="blog-slider__button lift ml-auto" data-toggle="modal" data-target="#exampleModalPreview">Connexion</a>
-  
+            <p id="usernames" class="lift ml-auto"></p>
 
             <!-- <button id="modalActivate" type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalPreview">
               Launch demo modal
@@ -121,7 +121,8 @@
                   <span class="blog-slider__code">7 Décembre 2020  Paris - FRANCE</span>
                   <div class="blog-slider__title font-manga">Dragon Ball Z</div>
                   <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
-                  <a href="#" class=" blog-slider__button" data-toggle="modal" data-target="#exampleModalCenter" disabled>S'inscrire à l'évènement</a>
+                  <a href="#" class="connect blog-slider__button" data-toggle="modal" data-target="#exampleModalPreview" disabled>Connecter vous pour vous inscrire a l'événement</a>
+                  <a href="" class="blog-slider__button inscrip-event" onclick="okz()"></a> 
                 </div>
               </div>
             </div>
@@ -141,7 +142,8 @@
                   <span class="blog-slider__code">24 Mars 2021 Madrid - ESPAGNE</span>
                   <div class="blog-slider__title font-manga"> Saint Seiya</div>
                   <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
-                  <a href="#" class="blog-slider__button" data-toggle="modal" data-target="#exampleModalCenter">S'inscrire à l'évènement</a>
+                  <a href="#" class="connect blog-slider__button" data-toggle="modal" data-target="#exampleModalPreview">Connecter vous pour vous inscrire a l'événement</a>
+                  <a href="" class="blog-slider__button inscrip-event"></a> 
                 </div>
               </div>
             </div>
@@ -164,20 +166,14 @@
           <span class="blog-slider__code">15 juillet 2021 Tokyo - JAPON</span>
           <div class="blog-slider__title font-manga">GOLDORAK</div>
           <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
-          <a href="#" class="blog-slider__button" data-toggle="modal" data-target="#exampleModalCenter">S'inscrire à l'évènement</a>
+          <a href="#" class ="connect blog-slider__button" data-toggle="modal" data-target="#exampleModalPreview">Connecter vous pour vous inscrire a l'événement</a>
+          <a href="" class="blog-slider__button inscrip-event"></a> 
           
         </div>
       </div>
     </div>
 </div>
 </div>
-
-
-
-
-
-
-
 </div>
 </main>
   
@@ -259,15 +255,15 @@
           
                           <div class="form-group">
                               <label>
-                                  <input type="text" id="form_email" class="my_form-control" required>
-                                  <small class="my_place">Your email</small>
+                                  <input type="text" id="username" class="my_form-control" required>
+                                  <small class="my_place">Your Username</small>
                                   <div class="invalid-feedback">Please fill out this field.</div>
                               </label>
                           </div>   
           
                           <div class="form-group">
                               <label>
-                                  <input type="password" id="form_password" class="my_form-control" required>
+                                  <input type="password" id="password" class="my_form-control" required>
                                   <small class="my_place">Your password</small>
                                   <div class="invalid-feedback">Please fill out this field.</div>
           
@@ -275,7 +271,7 @@
                           </div>  
           
                           <div class="form-group text-center">
-                              <button type="submit" class="btn btn-primary mt-2 mx-auto" >SIGN IN</button>
+                              <button type="submit" onclick="ok()" class="btn btn-primary mt-2 mx-auto" >SIGN IN</button>
                           </div>
           
                           <div class="form-group mt-2 text-center">
@@ -317,38 +313,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script>
-      (function() {
-       'use strict';
-       window.addEventListener('load', function() {
-         // Fetch all the forms we want to apply custom Bootstrap validation styles to
-         var forms = document.getElementsByClassName('needs-validation');
-         // Loop over them and prevent submission
-         var validation = Array.prototype.filter.call(forms, function(form) {
-           form.addEventListener('submit', function(event) {
-             if (form.checkValidity() === false) {
-               event.preventDefault();
-               event.stopPropagation();
-             }
-             form.classList.add('was-validated');
-           }, false);
-         });
-       }, false);
-     })();
-
-
-     const signUpButton = document.getElementById('signUp');
-     const signInButton = document.getElementById('signIn');
-     const container = document.getElementById('container');
-
-     signUpButton.addEventListener('click',()=>{
-         container.classList.add("right-panel-active");
-     });
-
-     signInButton.addEventListener('click',()=>{
-         container.classList.remove("right-panel-active");
-     });
- </script>
+    <script src="js/connexion.js"></script>
   </body>
 </html>
 
