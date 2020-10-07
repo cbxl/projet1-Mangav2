@@ -1,0 +1,172 @@
+/* g�n�ral */
+.blanc {
+    color: #fff;
+}
+
+/* body  */
+body.evenement {
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #fd3838 74%);
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body.homepage {
+    background-color: #e2e2e2;
+}
+
+.carte-perso-top10 {
+    background-color: #e2e2e2;
+}
+
+
+/* font */
+.font-manga {
+    font-family: 'Bangers', cursive;
+}
+
+p.homepage {
+    text-align: justify;
+}
+
+p.sous-titre {
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+}
+
+
+/* caroussel */
+
+@media screen and (max-width:780px) {
+    #carouselExampleIndicators {
+        display: none;
+    }
+
+    .image-smartphone {
+        display: block;
+    }
+}
+
+@media screen and (min-width:780px) {
+    .image-smartphone {
+        display: none;
+    }
+}
+
+.d-block {
+    width: 70%;
+    opacity: 0.8;
+    background-color: #11222c;
+}
+
+.carousel-control-prev-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.carousel-control-next-icon {
+    width: 60px;
+    height: 60px;
+}
+
+
+/* card homepage*/
+
+.homepageCard {
+    border-radius: 25px;
+    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);
+}
+
+
+.btn-homepage {
+    display: inline-flex;
+    background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
+    padding: 15px 35px;
+    border-radius: 50px;
+    color: #fff;
+    box-shadow: 0px 14px 80px rgba(252, 56, 56, 0.4);
+    text-decoration: none;
+    font-weight: 500;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 1px;
+}
+@media screen and (max-width: 576px) {
+    .btn-homepage {
+        width: 100%;
+    }
+}
+
+.badge-warning-homepage {
+    background-image: linear-gradient(147deg, #FFE53B 15%, #fd3838 74%);
+}
+
+.imageCommencement {
+    width: 100%;
+}
+
+
+.imageLibrairie {
+    width: 100%;
+    max-height: 179px;
+    margin-bottom: 0.8em;
+}
+
+.imageFrance {
+    width: 100%;
+    max-height: 179px;
+    margin-bottom: 0.8em;
+}
+
+
+/*slider top perso */
+.perso1 {
+    background-image: url(https://vignette.wikia.nocookie.net/onepiece/images/2/27/Nami_Anime_Post_Ellipse_Infobox.png/revision/latest/scale-to-width-down/340?cb=20181021130911&path-prefix=fr);
+    background-size: cover;
+}
+.perso2 {
+    background-image: url(https://i.pinimg.com/originals/fd/8f/31/fd8f3184e701f9d66df1229c07d16610.jpg);
+    background-size: cover;
+}
+.perso3 {
+    background-image: url(https://i.pinimg.com/originals/67/aa/55/67aa557b09a2d43fce34aa8153a0b612.jpg);
+    background-size: cover;
+}
+.perso4 {
+    background-image: url(https://i.pinimg.com/originals/08/d7/f6/08d7f611f248b1ccbdfaaa002a7f774b.jpg);
+    background-size: cover;
+}
+.perso5 {
+    background-image: url(https://i.pinimg.com/originals/6f/19/4b/6f194b8c6b674c6adbb8176122853a79.jpg);
+    background-size: cover;
+}
+.perso6 {
+    background-image: url(https://static.wikia.nocookie.net/animemanga-encyclopedie/images/7/7e/SAITAMA.jpg/revision/latest?cb=20170128152550&path-prefix=fr);
+    background-size: cover;
+}
+.perso7 {
+    background-image: url(https://i.pinimg.com/originals/2b/50/22/2b502282faf8ee5ce20ae3b814a5991d.jpg);
+    background-size: cover;
+}
+.perso8 {
+    background-image: url(https://vignette.wikia.nocookie.net/kurokosbasket/images/1/1b/Kuroko_subbed_back_in.png/revision/latest?cb=20150816141552&path-prefix=fr);
+    background-size: cover;
+}
+.perso9 {
+    background-image: url(https://i.pinimg.com/originals/8b/71/89/8b71899662e26ecfc8113d6106633f94.jpg);
+    background-size: cover;
+}
+.perso10 {
+    background-image: url(https://4.bp.blogspot.com/_KBCzBwWQboM/THwngPfhiMI/AAAAAAAAAAM/yGaBmozoR74/s1600/largeAnimePaperscans_GreatTeacherOnizuka_valkorn_92928.jpg);
+    background-size: cover;
+}
+.perso11 {
+    background-image: url(https://i.pinimg.com/originals/4c/86/d3/4c86d3b4eede2718f2dbfcea0a82175b.jpg);
+    background-size: cover;
+}
+.perso12 {
+    background-image: url(https://vignette.wikia.nocookie.net/raven-azunoctuli-world/images/d/d6/Rias_Gremory.jpg/revision/latest?cb=20170322170008&path-prefix=fr);
+    background-size: cover;
+}
+
+
