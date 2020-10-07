@@ -1,0 +1,106 @@
+/* manga card */
+
+.top10manga {
+    background-color: #e91e63d9;
+    background-image: linear-gradient(147deg, #e91e63d9 0%, #FFEB3B 66%);
+}
+  
+.mangaHeadImage {
+    width: 100%;
+}
+  
+.mangaTitle {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 3.5rem;
+    font-family: 'Bangers', cursive;
+    text-align: center;
+}
+  
+@media screen and (max-width: 1450px) {
+    .mangaTitle {
+      font-size: 2.5rem;
+    }
+}
+  
+.classement {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+  
+.mangaCard {
+    width: 100%;
+    max-width: 720px;
+    border-radius: 25px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
+  
+.mangaBadge {
+    display: grid;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+  
+.mangaCardImage {
+    margin-bottom: 40px;
+    box-shadow: 0px 8px 50px rgba(117, 116, 116, 0.4);
+}
+  
+.mangaCardBody {
+    padding-top: 0px;
+}
+  
+.mangaCardTitle {
+    font-family: 'Bangers', cursive;
+    text-align: center;
+}
+  
+.mangaCardTitle:hover {
+    transform: scale(1.5);
+}
+  
+.mangaCardList {
+    font-size: 15px;
+    padding-top: 10px;
+}
+  
+.mangaCardListDetails {
+    list-style: none;
+    padding-left: 0px;
+    font-style: italic;
+    margin-bottom: 0px;
+}
+  
+.mangaListGroupItem {
+    padding-left: 1rem;
+}
+  
+.mangaItemEnd {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+  
+.mangaCardModal {
+    margin-top: 30px;
+}
+  
+.mangaDetailButton {
+    background-image: linear-gradient(147deg, #FFEB3B 0%, #fd3838 74%);
+    background-color: transparent;
+    border-color: #fdae38;
+    padding: 10px 35px;
+    border-radius: 50px;
+    color: #fff;
+    box-shadow: 0px 14px 80px rgba(252, 56, 56, 0.4);
+    text-decoration: none;
+    font-weight: 500;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 1px;
+}
+  
