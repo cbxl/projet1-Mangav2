@@ -8,7 +8,7 @@ h3{
     font-weight: bold;
 	margin: 0px;
 	margin-bottom: 10px;
-	background-image: linear-gradient(to right,#7ba6f6, #3969a1);
+	background-image: linear-gradient(to right, #FF5722, #FF9800);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -65,7 +65,7 @@ background-color: transparent;
 border-color: #ffffff;
 }
 
-form {
+form.connect {
 	background-color: #FFFFFF;
 	display: flex;
 	align-items: center;
@@ -155,9 +155,9 @@ form {
 }
 
 .overlay {
-	background: #3946a1;
-	background: -webkit-linear-gradient(to right, #7bc3f6, #3946a1);
-	background: linear-gradient(to right, #7bc3f6, #3946a1);
+	background: #ff5222;
+	background: -webkit-linear-gradient(to right, #FF5722, #FF9800);
+	background: linear-gradient(to right, #FF5722, #FF9800);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
@@ -252,7 +252,7 @@ label
     pointer-events: none;
     top: 25px;
     left: 5px;
-    color: #0073ff;
+    color:  #FF5722;
     transition:  0.2s ease all;
     
 
@@ -264,7 +264,7 @@ label
     padding: 8px;
     padding-top: 18px;
     border: none;
-    border-bottom: 2px solid #0073ff;
+    border-bottom: 2px solid  #FF5722;
     outline: none;
 }
 
@@ -282,8 +282,8 @@ input:not(:focus):valid ~ .my_place
 .btn
 {
     border-radius: 5px;
-    box-shadow: 0 3px 4px #8abfff;
-    background-image: linear-gradient(to right, #7bc3f6, #3946a1, #7bc3f6);
+    box-shadow: 0 3px 4px #ff5722;
+    background-image: linear-gradient(to right, #FF5722, #FF9800);
     background-size: 200%;
     width: 250px;
     border: none;
@@ -312,7 +312,7 @@ input:not(:focus):valid ~ .my_place
   .forgot
   {
       font-size: 12px;
-      color: #0073ff;
+      color:  #FF5722;
       cursor: pointer;
   }
 
@@ -329,15 +329,22 @@ input:not(:focus):valid ~ .my_place
         height: auto !important;
         min-height: 100% !important;
         border-radius: 0 !important;
-        background-color: #ececec !important 
+        background-color: rgb(0 0 0 / 50%) !important;
     }
 
-    .modal-header-full-width  {
+    /* .modal-header-full-width  {
         border-bottom: 1px solid #9ea2a2 !important;
-    }
+    } */
 
-    .modal-footer-full-width  {
+    /* .modal-footer-full-width  {
         border-top: 1px solid #9ea2a2 !important;
-    }
+    } */
 
-    
+    .modal-body{
+		margin:auto;
+	}
+
+	.modal-header{
+		border-bottom: none;
+		margin-bottom: 250px;
+	}
