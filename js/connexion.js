@@ -67,6 +67,7 @@ function ok() {
             $('#exampleModalPreview').modal('hide');
             $('#modalActivate').hide();
             $('#usernames').text("Bienvenue "+username);
+            $('#usernames').css("color", "#FFFFFF");
             $('.connect').hide();
             $('.inscrip-event').show();
             $('.inscrip-event').text("inscription a l'événement");
