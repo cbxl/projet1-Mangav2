@@ -348,3 +348,12 @@ input:not(:focus):valid ~ .my_place
 		border-bottom: none;
 		margin-bottom: 250px;
 	}
+
+	#usernames{
+		color: #ffffff;
+		font-weight: 900;
+		padding: 15px;
+		border-radius: 25px;
+		font-size: large;
+	}
+	
