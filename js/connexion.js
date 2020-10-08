@@ -34,27 +34,27 @@
   $('.inscrip-event').hide();
 
   let userX = [
-	{ 
-		username: "Julien",
-		password: "ju"
-	},
-	{ 
-		username: "k",
-		password: "ka"
-	},
-	{ 
-		username: "b",
-		password: "ba"
+    { 
+      username: "Julien",
+      password: "ju"
     },
-    {
-        username: "a",
-        password: "aa"
+    { 
+      username: "k",
+      password: "ka"
     },
-    {
-        username: "c",
-        password: "ca"
-    }
-]
+    { 
+      username: "b",
+      password: "ba"
+      },
+      {
+          username: "a",
+          password: "aa"
+      },
+      {
+          username: "c",
+          password: "ca"
+      },
+  ]
 
 function ok() {
 	var username = document.getElementById('username').value
@@ -70,9 +70,7 @@ function ok() {
             $('.connect').hide();
             $('.inscrip-event').show();
             $('.inscrip-event').text("inscription a l'événement");
-            function okz(){
-                alert("tu es inscrit a l'événement")
-            }
+            
             
 			return
         }
@@ -81,3 +79,11 @@ function ok() {
 	alert("incorrect username or password")
 }
 
+function okz() {
+            $('.inscrip-event').show();
+            $('.inscrip-event').text("inscription validé");
+            
+            $('.button-valider').css("background-color", "#000"); 
+
+        
+	}
