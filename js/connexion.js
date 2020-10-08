@@ -70,7 +70,10 @@ function ok() {
             $('.connect').hide();
             $('.inscrip-event').show();
             $('.inscrip-event').text("inscription a l'événement");
+<<<<<<< HEAD
             
+=======
+>>>>>>> ce5c5fb8e102ddc2637c0a7eeea38e4a1e011dbe
             
 			return
         }
