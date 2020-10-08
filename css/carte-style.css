@@ -14,19 +14,18 @@ a{
 
 .carte-manga-top10 {
 	background-color: #28272B;
-	padding-bottom: 150px;
+	padding-bottom: 50px;
 }
 
 
 .carte-perso-top10{
 	background-color: #1565C0;
-	padding-top: 150px;
-	padding-bottom: 150px;
+	padding-bottom: 50px;
 
 }
 
 .box {
-	width: 250px;
+	width: 300px;
 	height: 450px;
 	background-color: #050c52;
 	background-image: linear-gradient(160deg, #050c52 10%, #3949AB 95%);
@@ -58,12 +57,17 @@ a{
 	margin-top: 20px;
 }
 .marvel {
-	padding-top: 20px;
-	color: #ffffff;
+	
+	color: #FFF;
 	font-weight: bold;
 	letter-spacing: 2px;
 	font-family: bebas kai;
 	font-size: 25px;
+}
+.persoTitre {
+	background-color: black;
+	opacity: 0.7;
+	width: 300px;
 }
 .logo{
 	height: 60px;
@@ -74,10 +78,7 @@ a{
 	transform: scale(1.02);
 	transition: all ease 0.3s;
 }
-/* .box:hover .marvel{
-	color:#c0292b;
-	transition: all ease 0.5s;
-} */
+
 /*--responsive for mobile phone--*/
 @media(max-width:720px){
 	.box{
