@@ -485,6 +485,235 @@ nav.menu a {
         color: hsl(0, 0%, 70%);
     }
 
+<<<<<<< HEAD:custom.css
+/* -----------------------Page Personnage-------------------------- */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #333;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color:#cacbd3;
+  background-image: linear-gradient(147deg, white 0%,#8900CD 80%);
+  font-family: 'Fira Sans', sans-serif;
+  background-attachment: fixed;
+}
+
+.content {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
+.heading {
+  width: 100%;
+  margin-left: 1rem;
+  font-weight: 900;
+  font-size: 1.618rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1ch;
+  line-height: 1;
+  padding-bottom: 0.5em;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-top: 40px;
+ 
+}
+.heading:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(135deg, #1a9be6, #1a57e6);
+  bottom: 0;
+}
+
+.description {
+  width: 100%;
+  margin-top: 0;
+  margin-left: 1rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  color: inherit;
+  cursor: pointer;
+  width: calc(33% - 2rem);
+  min-width: calc(33% - 2rem);
+  height: 400px;
+  min-height: 400px;
+  perspective: 1000px;
+  margin: 1rem;
+  position: relative;
+}
+@media screen and (max-width: 800px) {
+  .card {
+    width: calc(50% - 2rem);
+  }
+}
+@media screen and (max-width: 500px) {
+  .card {
+    width: 100%;
+  }
+}
+
+.front,
+.back {
+  display: flex;
+  border-radius: 6px;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: ease-in-out 600ms;
+}
+
+.front {
+  background-size: cover;
+  padding: 2rem;
+  font-size: 1.20rem;
+  font-weight: 600;
+  color: #fff;
+  overflow: hidden;
+  font-family: Poppins, sans-serif;
+}
+.front:before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+ /* background: linear-gradient(135deg, #1a9be6, #1a57e6);*/
+  opacity: 0.25;
+  z-index: -1;
+}
+.card:hover .front {
+  transform: rotateY(180deg);
+}
+.card:nth-child(even):hover .front {
+  transform: rotateY(-180deg);
+}
+
+.back {
+  background: #fff;
+  transform: rotateY(-180deg);
+  padding: 0 2em;
+}
+.back .button {
+  background: linear-gradient(135deg, #1a9be6, #1a57e6);
+}
+.back .button:before {
+  box-shadow: 0 0 10px 10px rgba(26, 87, 230, 0.25);
+  background-color: rgba(26, 87, 230, 0.25);
+}
+.card:hover .back {
+  transform: rotateY(0deg);
+}
+.card:nth-child(even) .back {
+  transform: rotateY(180deg);
+}
+.card:nth-child(even) .back .button {
+  background: linear-gradient(135deg, #e61a80, #e61a3c);
+}
+.card:nth-child(even) .back .button:before {
+  box-shadow: 0 0 10px 10px rgba(230, 26, 60, 0.25);
+  background-color: rgba(230, 26, 60, 0.25);
+}
+.card:nth-child(even):hover .back {
+  transform: rotateY(0deg);
+}
+
+.button {
+  transform: translateZ(40px);
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  font-weight: bold;
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 100px;
+  font: inherit;
+  border: none;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 300ms ease;
+}
+.button:before {
+  transition: 300ms ease;
+  position: absolute;
+  display: block;
+  content: "";
+  transform: translateZ(-40px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  height: calc(100% - 20px);
+  width: calc(100% - 20px);
+  border-radius: 100px;
+  left: 10px;
+  top: 16px;
+}
+.button:hover {
+  transform: translateZ(55px);
+}
+.button:hover:before {
+  transform: translateZ(-55px);
+}
+.button:active {
+  transform: translateZ(20px);
+}
+.button:active:before {
+  transform: translateZ(-20px);
+  top: 12px;
+}
+
+
+.pic1{
+  background-image: url(https://i.pinimg.com/originals/fe/fd/c4/fefdc4d9c20229cfac1c6daf30b412b6.gif);
+ 
+}
+
+
+.pic2{
+  background-image: url(https://thumbs.gfycat.com/WeightyElementaryDrafthorse-small.gif);
+}
+.pic3{
+  background-image: url(https://i.pinimg.com/originals/96/52/ea/9652ea1cdb24c9d55d621c62d9653aad.gif);
+}
+.pic4{
+  background-image: url(https://steamuserimages-a.akamaihd.net/ugc/945077695993694686/15A47D5D02A75DB7700CBBC61706AB3CFD8FEEE2/);
+}
+.pic5{
+  background-image: url(img/sangohan.gif);
+}
+.pic6{
+  background-image: url(https://i.pinimg.com/564x/bf/25/e5/bf25e581d64a9cd0649471d90ac4f324.jpg);
+=======
     .breadcrumb a:last-child:after {
         content: '\00a0\00a0\002F\00a0\00a0 now you\0027re here';
         color: hsl(0, 0%, 70%);
@@ -652,7 +881,37 @@ a.underline {
     padding: 5px;
     text-align: center;
     color: hsl(0, 0%, 100%);
+>>>>>>> 7c0b3079b128eb1a6eb444cff8b475cb0d58fe68:css/evenement.css
 }
+.pic7{
+  background-image: url(https://images.alphacoders.com/100/thumb-1920-1001634.jpg);
+}
+.pic8{
+  background-image: url(https://i.pinimg.com/originals/de/0c/0f/de0c0fc5b1f6282833bbd9626b7d7bb4.jpg);
+}
+.pic9{
+  background-image: url(https://i.pinimg.com/736x/db/7b/80/db7b80df59f9541bcf0ea72f9404c217.jpg);
+}
+.pic10{
+  background-image: url(https://i.pinimg.com/736x/ed/43/92/ed43929176600eec2fe2cabcb3b43109.jpg);
+}
+.pic11{
+  background-image: url(https://static.wikia.nocookie.net/naruto-shippuden-ultimate-ninja-blazing/images/1/1c/Portrait-0250.png/revision/latest?cb=20161220011728);
+}
+.pic12{
+  background-image: url(https://i.pinimg.com/originals/01/bb/11/01bb1134090268f64d5f2d773c9b2df4.jpg);
+}
+/*---- front name -------*/
+#Edward,#minato, #saitama, #Songoku ,#songohan ,#itachi, #grey, #natsu, #hisoka, #kakashi, #kirua, #tobirama {
+  font-family: 'Bangers', cursive;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #FFE53B;
+  font-family: 'Bangers', cursive;
+  color: white;
+  text-align: center;
+}
+/*------caracteristique--------*/ 
+
 
     #top-button.show {
         display: block;
@@ -695,6 +954,29 @@ a.underline {
         font-weight: 600;
     }
 
+<<<<<<< HEAD:custom.css
+.atk , .def, .res, .typ, .caracteristique{
+  font-size:16px;
+  text-shadow: 4px 4px 4px #FFE53B;
+  font-family: 'Bangers', cursive;
+  color: black;
+  
+ 
+}
+.headtitle{
+  font-family: 'Bangers', cursive;
+  font-size: 3em;  
+  color: white; 
+  text-shadow: 4px 4px 4px black;
+}
+.nameback {
+  
+  font-size: 2em;
+  text-shadow: 4px 4px 4px #FFE53B;
+  font-family: 'Bangers', cursive;
+  color: black;
+ 
+=======
     .rounded,
     .rounded.top,
     .rounded.all {
@@ -725,6 +1007,7 @@ a.underline {
     .breadcrumb a:after {
         display: none;
     }
+>>>>>>> 7c0b3079b128eb1a6eb444cff8b475cb0d58fe68:css/evenement.css
 }
 
 
@@ -732,7 +1015,7 @@ a.underline {
 
 
 
-/* footer */
+/* --------------------------footer -------------------------*/
 .site-footer
 {
   background-color:#26272b;
