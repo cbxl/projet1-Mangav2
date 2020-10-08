@@ -67,6 +67,7 @@ function ok() {
             $('#exampleModalPreview').modal('hide');
             $('#modalActivate').hide();
             $('#usernames').text("Bienvenue "+username);
+            $('#usernames').css("color", "#FFFFFF");
             $('.connect').hide();
             $('.inscrip-event').show();
             $('.inscrip-event').text("inscription a l'événement");
@@ -78,11 +79,25 @@ function ok() {
 	alert("incorrect username or password")
 }
 
+function okx() {
+            $('.inscrip-event').show();
+            $('.button-valider').text("inscription validé");
+            
+            $('.button-valider').css("background-color", "#009688");
+            $('.button-valider').css("border", "#009688");        
+}
+function oky() {
+            $('.inscrip-event').show();
+            $('.button-valider1').text("inscription validé");
+    
+            $('.button-valider1').css("background-color", "#009688");
+            $('.button-valider1').css("border", "#009688");       
+}
 function okz() {
             $('.inscrip-event').show();
-            $('.inscrip-event').text("inscription validé");
-            
-            $('.button-valider').css("background-color", "#000"); 
+            $('.button-valider2').text("inscription validé");
+  
+            $('.button-valider2').css("background-color", "#009688");
+            $('.button-valider2').css("border", "#009688");        
+}
 
-        
-	}
