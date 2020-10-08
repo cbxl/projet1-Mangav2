@@ -1063,7 +1063,6 @@ isXML = Sizzle.isXML = function( elem ) {
 };
 
 /**
-
  * Sets document-related variables once based on the current document
  * @param {Element|Object} [doc] An element or document object to use to set the document
  * @returns {Object} Returns the current document
