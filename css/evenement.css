@@ -3,10 +3,15 @@
   color: #fff;
 }
  /* body  */
-  body.evenement {
-    background-color: #FFE53B;
-    background-image: linear-gradient(147deg, #FFE53B 0%, #fd3838 74%);
+body.evenement {
+    /*background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #fd3838 74%);*/
+    background-color: #010744;
+    background-image: linear-gradient(180deg, #010744 35%,#FF0057 95%);
     font-family: 'Fira Sans', sans-serif;
+}
+.titre-Evenement{
+    font-size : 48px;
 }
 
 .historique {
