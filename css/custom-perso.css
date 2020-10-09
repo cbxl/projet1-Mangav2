@@ -12,7 +12,7 @@ html {
   line-height: 1.5;
   font-weight: 300;
   color: #333;
-  font-family: "Nunito Sans", sans-serif;
+  /* font-family: "Nunito Sans", sans-serif; */
 }
 
 body {
@@ -21,7 +21,7 @@ body {
   height: 100vh;
   background-color:#cacbd3;
   background-image: linear-gradient(147deg, white 0%,#8900CD 80%);
-  font-family: 'Fira Sans', sans-serif;
+  /* font-family: 'Fira Sans', sans-serif; */
   background-attachment: fixed;
 }
 
@@ -48,7 +48,7 @@ body {
   padding-top: 40px;
  
 }
-.heading:after {
+/*.heading:after {
   display: block;
   content: "";
   position: absolute;
@@ -57,6 +57,7 @@ body {
   background: linear-gradient(135deg, #1a9be6, #1a57e6);
   bottom: 0;
 }
+*/
 
 .description {
   width: 100%;
