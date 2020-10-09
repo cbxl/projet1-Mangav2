@@ -12,8 +12,9 @@ html {
   line-height: 1.5;
   font-weight: 300;
   color: #333;
-  font-family: "Nunito Sans", sans-serif;
+  /* font-family: "Nunito Sans", sans-serif; */
 }
+
 
 .body-perso {
     margin: 0;
@@ -49,7 +50,7 @@ html {
   padding-top: 40px;
  
 }
-.heading:after {
+/*.heading:after {
   display: block;
   content: "";
   position: absolute;
@@ -58,6 +59,7 @@ html {
   background: linear-gradient(135deg, #1a9be6, #1a57e6);
   bottom: 0;
 }
+*/
 
 .description {
   width: 100%;
