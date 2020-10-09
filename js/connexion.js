@@ -34,55 +34,75 @@
   $('.inscrip-event').hide();
 
   let userX = [
-    { 
-      username: "Julien",
-      password: "ju"
-    },
-    { 
-      username: "gabriel",
-      password: "gabriel"
-    },
-    { 
-      username: "coline",
-      password: "coline"
-      },
+    // { 
+    //   username: "Julien",
+    //   password: "ju"
+    // },
+    // { 
+    //   username: "gabriel",
+    //   password: "gabriel"
+    // },
+    // { 
+    //   username: "coline",
+    //   password: "coline"
+    //   },
       {
           username: "sophie",
           password: "sophie"
       },
-      {
-          username: "francois",
-          password: "francois"
-      },
+      // {
+      //     username: "francois",
+      //     password: "francois"
+      // },
   ]
 
 function ok() {
 	var username = document.getElementById('username').value
-	var password = document.getElementById('password').value
+  var password = document.getElementById('password').value
+  
 
-	for(var i = 0; i < userX.length; i++) {
+ 
 		
-		if(username == userX[i].username && password == userX[i].password){
+    	if(username == userX[0].username && password == userX[0].password){
+  
+              $('#exampleModalPreview').modal('hide');
+              $('#modalActivate').hide();
+              $('#usernames').text("Bienvenue "+username);
+              $('#usernames').css("color", "#FFFFFF");
+              $('#usernames').css("border", "solid 1px #fff");
+              $('.connect').hide();
+              $('.inscrip-event').show();
+              $('.inscrip-event').text("inscription a l'événement");
+      
+  
+          }
 
-            $('#exampleModalPreview').modal('hide');
-            $('#modalActivate').hide();
-            $('#usernames').text("Bienvenue "+username);
-            $('#usernames').css("color", "#FFFFFF");
-            $('#usernames').css("border", "solid 1px #fff");
-            $('.connect').hide();
-            $('.inscrip-event').show();
-            $('.inscrip-event').text("inscription a l'événement");
+
+
+
+	// for(var i = 0; i < userX.length; i++) {
+		
+	// 	if(username == userX[i].username && password == userX[i].password){
+
+  //           $('#exampleModalPreview').modal('hide');
+  //           $('#modalActivate').hide();
+  //           $('#usernames').text("Bienvenue "+username);
+  //           $('#usernames').css("color", "#FFFFFF");
+  //           $('#usernames').css("border", "solid 1px #fff");
+  //           $('.connect').hide();
+  //           $('.inscrip-event').show();
+  //           $('.inscrip-event').text("inscription a l'événement");
     
-			return
-        }
-        
-	}
-	alert("incorrect username or password")
+
+  //       }
+       
+	// }
+	// alert("incorrect username or password")
 }
 
 function okx() {
             $('.inscrip-event').show();
-            $('.button-valider').text("inscription validé");
+            $('.button-valider').text("inscription validée");
             
             $('.button-valider').css("background-color", "#009688");
             $('.button-valider').css("border", "#009688"); 
@@ -91,7 +111,7 @@ function okx() {
 }
 function oky() {
             $('.inscrip-event').show();
-            $('.button-valider1').text("inscription validé");
+            $('.button-valider1').text("inscription validée");
     
             $('.button-valider1').css("background-color", "#009688");
             $('.button-valider1').css("border", "#009688");
@@ -100,7 +120,7 @@ function oky() {
 }
 function okz() {
             $('.inscrip-event').show();
-            $('.button-valider2').text("inscription validé");
+            $('.button-valider2').text("inscription validée");
   
             $('.button-valider2').css("background-color", "#009688");
             $('.button-valider2').css("border", "#009688");  
