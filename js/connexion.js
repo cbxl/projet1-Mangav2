@@ -63,7 +63,7 @@ function ok() {
 
  
 		
-    	if(username == userX[0].username && password == userX[0].password){
+    	// if(username == userX[0].username && password == userX[0].password){
   
               $('#exampleModalPreview').modal('hide');
               $('#modalActivate').hide();
@@ -75,7 +75,7 @@ function ok() {
               $('.inscrip-event').text("inscription a l'événement");
       
   
-          }
+          // }
 
 
 
