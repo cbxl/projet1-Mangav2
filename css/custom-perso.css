@@ -7,23 +7,15 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 18px;
-  line-height: 1.5;
-  font-weight: 300;
-  color: #333;
-  /* font-family: "Nunito Sans", sans-serif; */
-}
+
 
 
 .body-perso {
     margin: 0;
     padding: 0;
     height: 100vh;
-   /* background-color: #cacbd3;
-    background-image: linear-gradient(147deg, white 0%,#8900CD 80%);*/
-    background-color: #FFE53B;
-    background-image: linear-gradient(147deg, #FFE53B 0%, #fd3838 74%);
+    background-color: #010744;
+    background-image: linear-gradient(180deg, #010744 35%,#FF0057 95%);
     background-attachment: fixed;
 }
 
@@ -37,18 +29,18 @@ html {
 }
 
 .heading {
-  width: 100%;
-  margin-left: 1rem;
-  font-weight: 900;
-  font-size: 1.618rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1ch;
-  line-height: 1;
-  padding-bottom: 0.5em;
-  margin-bottom: 1rem;
-  position: relative;
-  padding-top: 40px;
- 
+    width: 100%;
+    /*margin-left: 1rem;*/
+    font-weight: 900;
+/*    font-size: 1.618rem;
+*/    text-transform: uppercase;
+    letter-spacing: 0.1ch;
+    line-height: 1;
+    padding-bottom: 0.5em;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 /*.heading:after {
   display: block;
@@ -270,9 +262,9 @@ html {
 }
 .headtitle{
   font-family: 'Bangers', cursive;
-  font-size: 3em;  
+  font-size: 48px; 
   color: white; 
-  text-shadow: 4px 4px 4px black;
+  /*text-shadow: 4px 4px 4px black;*/
   text-align: center;
 }
 .nameback {
