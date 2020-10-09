@@ -39,20 +39,20 @@
       password: "ju"
     },
     { 
-      username: "k",
-      password: "ka"
+      username: "gabriel",
+      password: "gabriel"
     },
     { 
-      username: "b",
-      password: "ba"
+      username: "coline",
+      password: "coline"
       },
       {
-          username: "a",
-          password: "aa"
+          username: "sophie",
+          password: "sophie"
       },
       {
-          username: "c",
-          password: "ca"
+          username: "francois",
+          password: "francois"
       },
   ]
 
@@ -67,6 +67,8 @@ function ok() {
             $('#exampleModalPreview').modal('hide');
             $('#modalActivate').hide();
             $('#usernames').text("Bienvenue "+username);
+            $('#usernames').css("color", "#FFFFFF");
+            $('#usernames').css("border", "solid 1px #fff");
             $('.connect').hide();
             $('.inscrip-event').show();
             $('.inscrip-event').text("inscription a l'événement");
@@ -78,11 +80,30 @@ function ok() {
 	alert("incorrect username or password")
 }
 
+function okx() {
+            $('.inscrip-event').show();
+            $('.button-valider').text("inscription validé");
+            
+            $('.button-valider').css("background-color", "#009688");
+            $('.button-valider').css("border", "#009688"); 
+            $('.button-valider').css("box-shadow", "rgba(0, 150, 136, 0.4) 0px 7px 10px 2px"); 
+            
+}
+function oky() {
+            $('.inscrip-event').show();
+            $('.button-valider1').text("inscription validé");
+    
+            $('.button-valider1').css("background-color", "#009688");
+            $('.button-valider1').css("border", "#009688");
+            $('.button-valider1').css("box-shadow", "rgba(0, 150, 136, 0.4) 0px 7px 10px 2px"); 
+
+}
 function okz() {
             $('.inscrip-event').show();
-            $('.inscrip-event').text("inscription validé");
-            
-            $('.button-valider').css("background-color", "#000"); 
+            $('.button-valider2').text("inscription validé");
+  
+            $('.button-valider2').css("background-color", "#009688");
+            $('.button-valider2').css("border", "#009688");  
+            $('.button-valider2').css("box-shadow", "rgba(0, 150, 136, 0.4) 0px 7px 10px 2px");       
+}
 
-        
-	}
