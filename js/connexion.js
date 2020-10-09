@@ -33,28 +33,28 @@
   
   $('.inscrip-event').hide();
 
-  let userX = [
-    // { 
-    //   username: "Julien",
-    //   password: "ju"
-    // },
-    // { 
-    //   username: "gabriel",
-    //   password: "gabriel"
-    // },
-    // { 
-    //   username: "coline",
-    //   password: "coline"
-    //   },
-      {
-          username: "sophie",
-          password: "sophie"
-      },
-      // {
-      //     username: "francois",
-      //     password: "francois"
-      // },
-  ]
+  // let userX = [
+  //   // { 
+  //   //   username: "Julien",
+  //   //   password: "ju"
+  //   // },
+  //   // { 
+  //   //   username: "gabriel",
+  //   //   password: "gabriel"
+  //   // },
+  //   // { 
+  //   //   username: "coline",
+  //   //   password: "coline"
+  //   //   },
+  //     {
+  //         username: "sophie",
+  //         password: "sophie"
+  //     },
+  //     // {
+  //     //     username: "francois",
+  //     //     password: "francois"
+  //     // },
+  // ]
 
 function ok() {
 	var username = document.getElementById('username').value
